@@ -1,33 +1,40 @@
-.details-section {
-  margin-top: 20px;
-  background-color: #f5f5f5;
-}
-.box-image {
-  width: 100%;
+.card {
+  border-radius: 1.7rem;
 }
 
-.price .box-price {
-  border-radius: 0 5px 0 5px;
-  background-color: chocolate;
-  color: white;
-  padding: 2px 4px 2px 4px;
-}
-.price .box-price span {
-  font-size: 10px;
+.card:hover {
+  transition: 0.5s;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
-.social-media i {
-  margin-top: 20px;
-  margin-right: 10px;
-  text-decoration: none;
+.card-img-top {
+  border-radius: 1.7rem;
+  background-repeat: no-repeat;
+  height: 20rem;
+  background-position: center;
+  background-size: cover;
 }
 
-.social-media .fa-instagram {
-  color: #c13584;
+.chinese {
+  background-image: url("http://1.bp.blogspot.com/-1ZmtEmTRT5k/U_1tyO_7UzI/AAAAAAAABVg/se3xQ7CuC3M/s1600/Asian+Slaw+3.jpg");
 }
-.social-media .fa-facebook {
-  color: #3b5998;
+
+.korean {
+  background-image: url("https://i.pinimg.com/564x/d6/53/f2/d653f278243751804f29b4420afa6072.jpg");
 }
-.social-media .fa-twitter-square {
-  color: #1da1f2;
+
+.japanese {
+  background-image: url("https://i.pinimg.com/564x/7f/2a/17/7f2a175fa81e9d0b43b62a1069b40d9b.jpg");
+}
+
+.italian {
+  background-image: url("https://i.pinimg.com/564x/b9/84/dd/b984dde64142bab6166ac7888610ab6a.jpg");
+}
+
+.indian {
+  background-image: url("https://i.pinimg.com/564x/a7/96/be/a796be6d625230f0b33678fe4ad3e1ee.jpg");
+}
+
+.middle-eastern {
+  background-image: url("https://i.pinimg.com/564x/57/82/e5/5782e5170f8992628796c0cd8b72c19b.jpg");
 }
