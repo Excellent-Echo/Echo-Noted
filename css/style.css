@@ -20,12 +20,12 @@
 }
 
 .card {
-    border-radius: 1.7rem;
+  border-radius: 1.7rem;
 }
 
 .card:hover {
-    transition: .5s;
-    box-shadow:  1px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
 .card-img-top {
