@@ -1,12 +1,15 @@
 window.onload = function() {
-    const endPoint = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=fdf95f4ae2094eefa59fcfd38c3a53b6&cuisine=Korean&number=12'
+    const apiKey = ["80e73835c8934c0a8f67600904977073", "83f2261f53d549ad8d8451ba2ebde399", "10baa3c3fcac490ab89f070dd6a19ba9"]
+    const random = Math.floor(Math.random() * apiKey.length)
+    const randomAPIKey = apiKey[random]
+
+    const endPoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${randomAPIKey}&cuisine=Korean&number=12`
 	
     const foodList = document.getElementById("foodList")
     const fetchApi = () => {
         fetch(endPoint)
         .then(response => response.json())
          .then(data => {
-             console.log(data.results);
             let content = ""
             let contentData = data.results.forEach(element => { 
                 content += 
@@ -14,12 +17,12 @@ window.onload = function() {
                     <div class="card">
                         <img src="${element.image}" class="card-img-top" height="250px">
                         <div class="card-body">
-                            <h5 class="card-title">${element.title}</h5>
-                            <input class="btn btn-primary" type="submit" value="Wishlist">
+                            <h6 class="card-title">${element.title}</h6>
+                            <div class ="submitBtn">
+                                <input class="btn btn-primary" type="submit" value="Wishlist" id="wishlistButton">
+                            </div>
                         </div>
-                        <div class ="submitBtn">
-                           
-                        </div>
+ 
                     </div>
                 </div>`
             });
@@ -28,8 +31,7 @@ window.onload = function() {
             return contentData
         })
     }
-
-    console.log(fetchApi());
+    fetchApi()
 }
 
     
