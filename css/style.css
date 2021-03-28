@@ -68,3 +68,48 @@
 #recommendation {
     display: flex;
 }
+
+/* ==========================FOOTER=================== */
+.footer-box {
+  /* position: absolute; */
+  /* right: 0;
+  bottom: 0;
+  left: 0; */
+}
+.footer {
+  padding-top: 15px;
+  background-color: rgb(39, 38, 38);
+  color: rgb(207, 203, 203);
+}
+.footer h3 {
+  font-style: italic;
+  font-family: cursive;
+}
+
+.footer .list-country h6 {
+  padding-bottom: 1.5px;
+  border-bottom: 0.2px solid aliceblue;
+  display: inline;
+}
+
+.footer .list-country li {
+  list-style-type: none;
+}
+
+.footer .list-country li a {
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+}
+.footer .list-country li a:hover {
+  margin-left: 3px;
+  color: burlywood;
+  font-size: 18px;
+}
+
+.copyright {
+  background-color: rgb(39, 38, 38);
+  color: rgb(236, 235, 235);
+  border-top: 1px solid white;
+  text-align: center;
+  padding-bottom: 5px;
+}
