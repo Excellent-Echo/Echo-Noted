@@ -17,40 +17,20 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container details-section">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="box-image">
-            <img src="images/food.jpg" width="100%" alt="gambar makanan" />
-          </div>
-        </div>
-        <div class="col-md-7">
-          <h2>Indonesian Burger</h2>
-          <p>
-            Inspired by the classic American burger, chicken thighs and new
-            potatoes are flavoured with beef and tomato in this easy one-pan
-            meal.
-          </p>
-          <p class="price">
-            <i class="fas fa-tags"></i>
-            <span class="box-price"><span>Rp.</span>45k</span>
-          </p>
-          <div class="social-media">
-            <a href="https://www.instagram.com" target="_blank">
-              <i class="fab fa-2x fa-instagram"></i
-            ></a>
-            <a href="https://www.facebook.com" target="_blank">
-              <i class="fab fa-2x fa-facebook"></i
-            ></a>
-            <a href="https://www.twitter.com" target="_blank"
-              ><i class="fab fa-2x fa-twitter-square"></i
-            ></a>
-          </div>
-        </div>
-      </div>
+    <div class="container-fluid details-section">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item" id="menu"></li>
+          <li class="breadcrumb-item active" aria-current="page" id="dish-breadcumb"></li>
+        </ol>
+      </nav>
+
+      <div id="details-section"></div>
+  
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script
@@ -58,5 +38,6 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
