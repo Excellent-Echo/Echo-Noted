@@ -1,0 +1,33 @@
+.details-section {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+}
+.box-image {
+  width: 100%;
+}
+
+.price .box-price {
+  border-radius: 0 5px 0 5px;
+  background-color: chocolate;
+  color: white;
+  padding: 2px 4px 2px 4px;
+}
+.price .box-price span {
+  font-size: 10px;
+}
+
+.social-media i {
+  margin-top: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-media .fa-instagram {
+  color: #c13584;
+}
+.social-media .fa-facebook {
+  color: #3b5998;
+}
+.social-media .fa-twitter-square {
+  color: #1da1f2;
+}
