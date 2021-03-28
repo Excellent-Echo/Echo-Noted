@@ -71,10 +71,10 @@
 
 /* ==========================FOOTER=================== */
 .footer-box {
-  position: absolute;
-  right: 0;
+  /* position: absolute; */
+  /* right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
 }
 .footer {
   padding-top: 15px;
