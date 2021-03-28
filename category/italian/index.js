@@ -14,17 +14,20 @@
             let contentData = data.results.forEach(element => { 
                 content += 
                 `<div class="col-md-3">
-                        <div class="card" onClick="detail(event, ${element.id})">
-                            <a href="/pages/details/index.html">
-                                <img src="${element.image}" class="card-img-top" height="250px">
+                        <div class="card">
+                            <a href="">
+                               <div onClick="detail(event, ${element.id})">
+                                    <img src="${element.image}" class="card-img-top" height="250px">
+                               </div>
                             </a>
-                                <div class="card-body">
-                                    <a href="/pages/details/index.html">
-                                        <h6 class="card-title">${element.title}</h6>
-                                    </a>
-                                    <div class ="submitBtn">
-                                        <input class="btn btn-primary" type="submit" value="Wishlist" id="wishlistButton">
-                                    </div>
+                            <div class="card-body">
+                                <a href="">
+                                    <h6 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h6>
+                                </a>
+
+                                <div class ="submitBtn">
+                                    <input class="btn btn-primary" type="submit" value="Wishlist" id="wishlistButton">                                   
+                                </div>
                             </div>
                         </div>
                 </div>`
