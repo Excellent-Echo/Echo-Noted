@@ -1,0 +1,25 @@
+.title {
+	margin: 20px 0px;
+}
+
+.card {
+	margin-bottom: 20px;
+}
+
+.card img {
+	padding: 10px;
+	width: 100%;
+}
+
+.card-title {
+	height: 70px;
+}
+
+#foodList {
+	display: flex;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
