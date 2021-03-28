@@ -30,71 +30,116 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Wishlist</a>
-
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Pandu -->
+  
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100 carousel-img1"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 carousel-img2"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 carousel-img3"></div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <main class="container">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card">
-                    <div class="card-img-top chinese"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Thai Veggie Slaw with Peanut Dressing and Crispy Wontons</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Chinese food</h6>
+                <a href="./category/chinese">
+                    <div class="card">
+                        <div class="card-img-top chinese"></div>
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">Chinese food</h4>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+
             <div class="col">
-                <div class="card">
-                    <div class="card-img-top korean"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Korean Candy Chicken</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Korean Food</h6>
+                <a href="./category/korean">
+                    <div class="card">
+                        <div class="card-img-top korean"></div>
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">Korean Food</h4>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+
             <div class="col">
-                <div class="card">
-                    <div class="card-img-top japanese"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Japanese Curry Puffs</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Japanese Food</h6>
+                <a href="./category/japanese">
+                    <div class="card">
+                        <div class="card-img-top japanese"></div>
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">Japanese Food</h4>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+
             <div class="col">
-                <div class="card">
-                    <div class="card-img-top italian"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Roma Tomato Bruschetta</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Italian food</h6>
+                <a href="./category/italian">
+                    <div class="card">
+                        <div class="card-img-top italian"></div>
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">Italian food</h4>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+
             <div class="col">
-                <div class="card">
-                    <div class="card-img-top indian"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Curry Beef Over Rice Noodles</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Indian food</h6>
+                <a href="./category/indian">
+                    <div class="card">
+                        <div class="card-img-top indian"></div>
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">Indian food</h4>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+
             <div class="col">
-                <div class="card">
-                    <div class="card-img-top middle-eastern"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Roasted Eggplant Hummus</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Middle Eastern food</h6>
+                <a href="./category/middle-eastern">
+                    <div class="card">
+                        <div class="card-img-top middle-eastern"></div>
+                        <div class="card-body">
+                            <h4 class="card-subtitle mb-2 text-muted">Middle Eastern food</h4>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+        </div>
+
+        <div class="my-5">
+            <h3 class="text-center mb-5">Popular Dish</h3>
+            <div id="recommendation"></div>
         </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

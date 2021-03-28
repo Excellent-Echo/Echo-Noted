@@ -1,3 +1,24 @@
+.carousel-img1,
+.carousel-img2,
+.carousel-img3 {
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-img1 {
+    background-image: url("https://images.unsplash.com/photo-1599731316520-e9578fea922a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1041&q=80");
+}
+
+.carousel-img2 {
+    background-image: url("https://images.unsplash.com/photo-1541921671-016ccc70f7cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1343&q=80");
+}
+
+.carousel-img3 {
+    background-image: url("https://images.unsplash.com/photo-1614277936061-7faea346e126?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+}
+
 .card {
   border-radius: 1.7rem;
 }
@@ -8,33 +29,42 @@
 }
 
 .card-img-top {
-  border-radius: 1.7rem;
-  background-repeat: no-repeat;
-  height: 20rem;
-  background-position: center;
-  background-size: cover;
+    border-radius: 1.7rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .chinese {
-  background-image: url("http://1.bp.blogspot.com/-1ZmtEmTRT5k/U_1tyO_7UzI/AAAAAAAABVg/se3xQ7CuC3M/s1600/Asian+Slaw+3.jpg");
+    background-image: url("http://1.bp.blogspot.com/-1ZmtEmTRT5k/U_1tyO_7UzI/AAAAAAAABVg/se3xQ7CuC3M/s1600/Asian+Slaw+3.jpg");
+    height: 20rem;
 }
 
 .korean {
-  background-image: url("https://i.pinimg.com/564x/d6/53/f2/d653f278243751804f29b4420afa6072.jpg");
+    background-image: url("https://i.pinimg.com/564x/d6/53/f2/d653f278243751804f29b4420afa6072.jpg");
+    height: 20rem;
 }
 
 .japanese {
-  background-image: url("https://i.pinimg.com/564x/7f/2a/17/7f2a175fa81e9d0b43b62a1069b40d9b.jpg");
+    background-image: url("https://i.pinimg.com/564x/7f/2a/17/7f2a175fa81e9d0b43b62a1069b40d9b.jpg");
+    height: 20rem;
 }
 
 .italian {
-  background-image: url("https://i.pinimg.com/564x/b9/84/dd/b984dde64142bab6166ac7888610ab6a.jpg");
+    background-image: url("https://i.pinimg.com/564x/b9/84/dd/b984dde64142bab6166ac7888610ab6a.jpg");
+    height: 20rem;
 }
 
 .indian {
-  background-image: url("https://i.pinimg.com/564x/a7/96/be/a796be6d625230f0b33678fe4ad3e1ee.jpg");
+    background-image: url("https://i.pinimg.com/564x/a7/96/be/a796be6d625230f0b33678fe4ad3e1ee.jpg");
+    height: 20rem;
 }
 
 .middle-eastern {
-  background-image: url("https://i.pinimg.com/564x/57/82/e5/5782e5170f8992628796c0cd8b72c19b.jpg");
+    background-image: url("https://i.pinimg.com/564x/57/82/e5/5782e5170f8992628796c0cd8b72c19b.jpg");
+    height: 20rem;
+}
+
+#recommendation {
+    display: flex;
 }
