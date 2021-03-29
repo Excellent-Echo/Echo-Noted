@@ -26,11 +26,16 @@ const fetchApi = (id) => {
 					<div class="my-2">
 						<h2>${data.title}</h2>
 					</div>
+
 					<p>${data.summary}</p>
 						<p class="price">
 						<i class="fas fa-tags"></i>
 						<span class="box-price">${data.pricePerServing}$</span>
 					</p>
+
+					<div class ="submitBtn">
+						<input class="btn btn-primary" type="submit" value="Wishlist" onclick="getByID(event, ${data.id})">                                   
+					</div>
 					
 					<div class="social-media">
 						<a href="https://www.instagram.com" target="_blank">
@@ -77,3 +82,21 @@ const fetchApi = (id) => {
 	})
 }
 fetchApi(dishID)
+
+
+const getByID = (event, id) => {
+	event.preventDefault()
+
+	const endPoint = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${randomAPIKey}&includeNutrition=false`
+
+	fetch(endPoint).then(response => response.json())
+	.then(data => {
+		let wishlistData = {
+			id: dishID,
+			title: data.title,
+			image: data.image
+		}
+	
+		localStorage.setItem('wishlist', JSON.stringify(wishlistData))	
+	})
+}
