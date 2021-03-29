@@ -20,7 +20,7 @@
 // saveWishlist()
 
 const endPoint = "https://605f03ffe96e5c00174080e1.mockapi.io/api/v1/wishlist"
-const wishlist = document.getElementById("wishlist")
+const wishlist = document.getElementById("wishlist-item")
 
 const fetchApi = () => {
 	fetch(endPoint)
@@ -30,18 +30,7 @@ const fetchApi = () => {
 		let content = ""
 		let contentData = data.forEach(element => { 
 			content += 
-			`<table class="table">
-				<thead>
-				  <tr>
-					<th scope="col">No</th>
-					<th scope="col" width="20%">Name</th>
-					<th scope="col" width="20%">Email</th>
-					<th scope="col" width="20%">Phone Number</th>
-					<th scope="col" width="20%">Image</th>
-					<th scope="col" width="20%">Dish</th>
-				  </tr>
-				</thead>
-				<tbody>
+			`<tbody>
 				  <tr>
 					<th scope="row">${element.id}</th>
 					<td>${element.name}</td>
@@ -50,8 +39,7 @@ const fetchApi = () => {
 					<td><img src="${element.dish.image}" class="card-img-top cart-image" alt="image"></td>
 					<td>${element.dish.title}</td>
 				  </tr>
-				</tbody>
-			</table>`
+				</tbody>`
 		});
 
 		wishlist.innerHTML = content
