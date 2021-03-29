@@ -1,8 +1,9 @@
+// window.onload = function() {
     const apiKey = ["80e73835c8934c0a8f67600904977073", "83f2261f53d549ad8d8451ba2ebde399", "10baa3c3fcac490ab89f070dd6a19ba9"]
     const random = Math.floor(Math.random() * apiKey.length)
     const randomAPIKey = apiKey[random]
 
-    const endPoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${randomAPIKey}&cuisine=Korean&number=12`
+    const endPoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${randomAPIKey}&cuisine=Middle Eastern&number=12`
 	
     const foodList = document.getElementById("foodList")
     const fetchApi = () => {
@@ -36,9 +37,12 @@
 
     let url = location.href;
 
-    const detail = (event, id) => {
+    const detail = (event,id) => {
         event.preventDefault()
         localStorage.setItem('dishID', id)
         localStorage.setItem("url",url)
         window.location.replace('/pages/details/index.html')
     }
+// }
+
+    
