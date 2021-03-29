@@ -14,16 +14,14 @@
             let contentData = data.results.forEach(element => { 
                 content += 
                 `<div class="col-md-3">
-                        <div class="card">
-                            <a href="">
+                        <div class="card">                     
                                <div onClick="detail(event, ${element.id})">
                                     <img src="${element.image}" class="card-img-top" height="250px">
                                </div>
-                            </a>
                             <div class="card-body">
-                                <a href="">
-                                    <h6 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h6>
-                                </a>
+                        
+                                    <h4 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h4>
+                                
                             </div>
                         </div>
                 </div>`
