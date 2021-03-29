@@ -102,13 +102,16 @@ a {
 }
 .footer h3 {
   font-style: italic;
-  font-family: cursive;
+}
+
+.footer .list-country ul {
+    text-align: center;
 }
 
 .footer .list-country h6 {
-  padding-bottom: 1.5px;
-  border-bottom: 0.2px solid aliceblue;
-  display: inline;
+    padding-bottom: 1.5px;
+    border-bottom: 0.2px solid aliceblue;
+    display: inline;
 }
 
 .footer .list-country li {
@@ -120,9 +123,7 @@ a {
   color: rgb(226, 226, 226);
 }
 .footer .list-country li a:hover {
-  margin-left: 3px;
   color: burlywood;
-  font-size: 18px;
 }
 
 .copyright {
@@ -139,11 +140,11 @@ a {
 
 /*===== MEDIA QUERIES  =====*/
 /* x-small  */
-@media screen and  (max-width: 575px) {
+@media screen and (max-width: 575px) {
     .country-dish-grid-container {
         padding: 1rem;
         display: grid;
-        grid-template-columns: 50% 50% ;
+        grid-template-columns: 50% 50%;
     }
 
     .card {
@@ -166,11 +167,11 @@ a {
 }
 
 /* small */
-@media screen and  (min-width: 576px) and (max-width: 767px){
+@media screen and (min-width: 576px) and (max-width: 767px) {
     .country-dish-grid-container {
         padding: 1rem;
         display: grid;
-        grid-template-columns: 50% 50% ;
+        grid-template-columns: 50% 50%;
     }
 
     .card {
@@ -184,5 +185,31 @@ a {
     .indian,
     .middle-eastern {
         height: 10rem;
+    }
+}
+
+/* medium */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .country-dish-grid-container {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .card {
+        margin: .5rem;
+    }
+}
+
+/* large */
+@media screen and (min-width: 992px) {
+    .country-dish-grid-container {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+
+    .card {
+        margin: .5rem;
     }
 }
