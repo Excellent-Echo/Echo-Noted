@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    /* height: 100vgh; */
 }
 
 a {
@@ -99,6 +100,7 @@ a {
   padding-top: 15px;
   background-color: rgb(39, 38, 38);
   color: rgb(207, 203, 203);
+  margin-top: 50px;
 }
 .footer h3 {
   font-style: italic;
