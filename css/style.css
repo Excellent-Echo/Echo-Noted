@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
 .carousel-img1,
 .carousel-img2,
 .carousel-img3 {
@@ -19,6 +29,10 @@
     background-image: url("https://images.unsplash.com/photo-1614277936061-7faea346e126?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
 }
 
+.country-dish-grid-container {
+
+}
+
 .card {
   border-radius: 1.7rem;
 }
@@ -35,34 +49,45 @@
     background-size: cover;
 }
 
+.chinese,
+.korean,
+.japanese,
+.italian,
+.indian,
+.middle-eastern {
+    height: 15rem;
+}
+
 .chinese {
     background-image: url("http://1.bp.blogspot.com/-1ZmtEmTRT5k/U_1tyO_7UzI/AAAAAAAABVg/se3xQ7CuC3M/s1600/Asian+Slaw+3.jpg");
-    height: 20rem;
 }
 
 .korean {
     background-image: url("https://i.pinimg.com/564x/d6/53/f2/d653f278243751804f29b4420afa6072.jpg");
-    height: 20rem;
 }
 
 .japanese {
     background-image: url("https://i.pinimg.com/564x/7f/2a/17/7f2a175fa81e9d0b43b62a1069b40d9b.jpg");
-    height: 20rem;
 }
 
 .italian {
     background-image: url("https://i.pinimg.com/564x/b9/84/dd/b984dde64142bab6166ac7888610ab6a.jpg");
-    height: 20rem;
 }
 
 .indian {
     background-image: url("https://i.pinimg.com/564x/a7/96/be/a796be6d625230f0b33678fe4ad3e1ee.jpg");
-    height: 20rem;
 }
 
 .middle-eastern {
     background-image: url("https://i.pinimg.com/564x/57/82/e5/5782e5170f8992628796c0cd8b72c19b.jpg");
-    height: 20rem;
+}
+
+.card-subtitle {
+    font-weight: 500;
+}
+
+.recommendation-container > h3 {
+    font-weight: 600;
 }
 
 #recommendation {
@@ -116,4 +141,54 @@
 
 .nav-icon {
   padding: 5px;
+}
+
+/*===== MEDIA QUERIES  =====*/
+/* x-small  */
+@media screen and  (max-width: 575px) {
+    .country-dish-grid-container {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+    }
+
+    .card {
+        margin: .5rem;
+    }
+
+    .chinese,
+    .korean,
+    .japanese,
+    .italian,
+    .indian,
+    .middle-eastern {
+        height: 7rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+}
+
+/* small */
+@media screen and  (min-width: 576px) and (max-width: 767px){
+    .country-dish-grid-container {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+    }
+
+    .card {
+        margin: .5rem;
+    }
+
+    .chinese,
+    .korean,
+    .japanese,
+    .italian,
+    .indian,
+    .middle-eastern {
+        height: 10rem;
+    }
 }
