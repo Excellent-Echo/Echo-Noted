@@ -98,6 +98,12 @@ const getByID = (event, id) => {
 			image: data.image
 		}
 	
-		localStorage.setItem('wishlist', JSON.stringify(wishlistData))	
+		localStorage.setItem('wishlist', JSON.stringify(wishlistData))
+
+		Swal.fire(
+			'Good job!',
+			'Menambahkan makanan ke dalam cart!',
+			'success'
+		  )
 	})
 }
