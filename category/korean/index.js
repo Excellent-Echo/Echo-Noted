@@ -21,7 +21,7 @@
                             </a>
                             <div class="card-body">
                                 <a href="">
-                                    <h6 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h6>
+                                    <h4 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h4>
                                 </a>
                             </div>
                         </div>
