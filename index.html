@@ -1,212 +1,162 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" href="./assets/img/echo-noted.png">
+        <title>Echo Noted</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Echo Noted</title>
-</head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark container-fluid p-5">
+                <div class="container-fluid">
+                    <div>
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./assets/img/echo-noted.png" alt="Echo Noted Icon" width="50">
+                            Echo Noted
+                        </a>
+                    </div>
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="./images/logo2.jpg" width="35" height="35" class="d-inline-block align-top" alt="">
-                Echo Noted
-            </a>
-
-            <form class="d-flex">
-                <a href="./pages/cart/" class="nav-icon" style="color: rgba(255,255,255,.55)">
-                    <i class="fas fa-shopping-cart fa-lg" id="cart" aria-hidden="true"></i>
-                </a>
-
-                <a href="./pages/wishlist/" class="nav-icon" style="color: rgba(255,255,255,.55)">
-                    <i class="fas fa-heart fa-lg" id="wishlist" aria-hidden="true"></i>
-                </a>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </form>
-        </div>
-    </nav>
-    <!-- Pandu -->
-    <!-- navbar -->
-
-    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-block w-100 carousel-img1"></div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-block w-100 carousel-img2"></div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-block w-100 carousel-img3"></div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <main class="">
-        <div class="country-dish-grid-container">
-            <div class="col">
-                <a href="./category/chinese">
-                    <div class="card">
-                        <div class="card-img-top chinese"></div>
-                        <div class="card-body">
-                            <h4 class="card-subtitle mb-2 text-muted">Chinese food</h4>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dish by Country
+                                    <i class='bx bxs-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./assets/category/chinese">Chinese</a></li>
+                                    <li><a class="dropdown-item" href="./assets/category/indian">Indian</a></li>
+                                    <li><a class="dropdown-item" href="./assets/category/italian">Italian</a></li>
+                                    <li><a class="dropdown-item" href="./assets/category/japanese">Japanese</a></li>
+                                    <li><a class="dropdown-item" href="./assets/category/korean">Korean</a></li>
+                                    <li><a class="dropdown-item" href="./assets/category/middle-eastern">Middle East</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-link" href="./assets/pages/wishlist">Wishlist</a>
+                            <a class="nav-link" href="./assets/pages/wishlist">Our Teams</a>
+                            <a class="nav-link" href="./assets/pages/wishlist">Contact</a>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </nav>
+        </header>
 
-            <div class="col">
-                <a href="./category/korean">
-                    <div class="card">
-                        <div class="card-img-top korean"></div>
-                        <div class="card-body">
-                            <h4 class="card-subtitle mb-2 text-muted">Korean Food</h4>
-                        </div>
+        <main class="">
+<!--            <div class="search-container">-->
+<!--                <input type="text" class="search-bar">-->
+<!--            </div>-->
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 carousel-img1"></div>
                     </div>
-                </a>
-            </div>
-
-            <div class="col">
-                <a href="./category/japanese">
-                    <div class="card">
-                        <div class="card-img-top japanese"></div>
-                        <div class="card-body">
-                            <h4 class="card-subtitle mb-2 text-muted">Japanese Food</h4>
-                        </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 carousel-img2"></div>
                     </div>
-                </a>
-            </div>
-
-            <div class="col">
-                <a href="./category/italian">
-                    <div class="card">
-                        <div class="card-img-top italian"></div>
-                        <div class="card-body">
-                            <h4 class="card-subtitle mb-2 text-muted">Italian food</h4>
-                        </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 carousel-img3"></div>
                     </div>
-                </a>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
-            <div class="col">
-                <a href="./category/indian">
-                    <div class="card">
-                        <div class="card-img-top indian"></div>
-                        <div class="card-body">
-                            <h4 class="card-subtitle mb-2 text-muted">Indian food</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
+<!--            <div class="my-5 recommendation-container">-->
+<!--                <h3 class="text-center mb-5">Popular Dish</h3>-->
+<!--                <div id="recommendation"></div>-->
+<!--            </div>-->
+        </main>
 
-            <div class="col">
-                <a href="./category/middle-eastern">
-                    <div class="card">
-                        <div class="card-img-top middle-eastern"></div>
-                        <div class="card-body">
-                            <h4 class="card-subtitle mb-2 text-muted">Middle Eastern food</h4>
-                        </div>
-                    </div>
-                </a>
+        <footer class="container-fluid footer-box">
+            <div class="row footer">
+                <div class="col">
+                    <h3>Echo-Noted</h3>
+                    <p>Cari makanan dari berbagai negara sesuai yang kamu mau</p>
+                </div>
+                <div class="col list-country">
+                    <ul>
+                        <h6>NEGARA ASAL</h6>
+                        <li><a href="">Chinese</a></li>
+                        <li><a href="">Korean</a></li>
+                        <li><a href="">Japanese</a></li>
+                    </ul>
+                </div>
+                <div class="col list-country">
+                    <ul>
+                        <h6>PERUSAHAAN</h6>
+                        <li><a href="">Who We Are</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Karir</a></li>
+                        <li><a href="">Laporkan Penipuan</a></li>
+                        <li><a href="">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col list-country">
+                    <ul>
+                        <h6>UNTUK FOODIES</h6>
+                        <li><a href="">Kode Etik</a></li>
+                        <li><a href="">Komunitas</a></li>
+                        <li><a href="">Bantuan Blogger</a></li>
+                        <li><a href="">Aplikasi Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="col list-country">
+                    <ul>
+                        <h6>UNTUK ANDA</h6>
+                        <li><a href="">Privasi</a></li>
+                        <li><a href="">Persyaratan</a></li>
+                        <li><a href="">Keamanan</a></li>
+                        <li><a href="">Peta Situs</a></li>
+                    </ul>
+                </div>
+                <div class="col list-country">
+                    <ul>
+                        <h6>TAUTAN SOSIAL</h6>
+                            <li><a href=""></a><img src="https://www.transparentpng.com/thumb/facebook-logo-png/background-facebook-logo-5.png" style="width:40%"></i><img src="https://www.transparentpng.com/thumb/twitter/twitter-style-icons-png-6.png" style="width:30%"></i></li>
+                            <li><a href=""></a><img src="assets/images/PLAYSTORE.png" style="width:40%"><img src="assets/images/APPSTORE.png" style="width:40%"></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            <div class="row copyright">
+                <div class="col-md-12">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+                    Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021
+                    © Echo Noted™ Pvt Ltd. All rights reserved.</div>
+            </div>
+        </footer>
 
-        <div class="my-5 recommendation-container">
-            <h3 class="text-center mb-5">Popular Dish</h3>
-            <div id="recommendation"></div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <div class="container-fluid footer-box">
-        <div class="row footer">
-            <div class="col">
-                <h3>Echo-Noted</h3>
-                <p>Cari makanan dari berbagai negara sesuai yang kamu mau</p>
-            </div>
-            <div class="col list-country">
-                <ul>
-                    <h6>NEGARA ASAL</h6>
-                    <li><a href="">Chinese</a></li>
-                    <li><a href="">Korean</a></li>
-                    <li><a href="">Japanese</a></li>
-                </ul>
-            </div>
-            <div class="col list-country">
-                <ul>
-                    <h6>PERUSAHAAN</h6>
-                    <li><a href="">Who We Are</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Karir</a></li>
-                    <li><a href="">Laporkan Penipuan</a></li>
-                    <li><a href="">Kontak</a></li>
-                </ul>
-            </div>
-            <div class="col list-country">
-                <ul>
-                    <h6>UNTUK FOODIES</h6>
-                    <li><a href="">Kode Etik</a></li>
-                    <li><a href="">Komunitas</a></li>
-                    <li><a href="">Bantuan Blogger</a></li>
-                    <li><a href="">Aplikasi Mobile</a></li>
-                </ul>
-            </div>
-            <div class="col list-country">
-                <ul>
-                    <h6>UNTUK ANDA</h6>
-                    <li><a href="">Privasi</a></li>
-                    <li><a href="">Persyaratan</a></li>
-                    <li><a href="">Keamanan</a></li>
-                    <li><a href="">Peta Situs</a></li>
-                </ul>
-            </div>
-            <div class="col list-country">
-                <ul>
-                    <h6>TAUTAN SOSIAL</h6>
-                        <li><a href=""></a><img src="https://www.transparentpng.com/thumb/facebook-logo-png/background-facebook-logo-5.png" style="width:40%"></i><img src="https://www.transparentpng.com/thumb/twitter/twitter-style-icons-png-6.png" style="width:30%"></i></li>
-                        <li><a href=""></a><img src="./images/PLAYSTORE.png" style="width:40%"><img src="./images/APPSTORE.png"style="width:40%"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row copyright">
-            <div class="col-md-12">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
-                Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021
-                © Echo Noted™ Pvt Ltd. All rights reserved.</div>
-        </div>
-    </div>
-    <!-- Footer -->
-
-    <script src="https://kit.fontawesome.com/6645177271.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
-</body>
+        <script src="https://kit.fontawesome.com/6645177271.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

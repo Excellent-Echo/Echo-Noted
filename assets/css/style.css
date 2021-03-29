@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -8,18 +8,56 @@
 a {
     text-decoration: none;
 }
+/* ======================================== NAVBAR ======================================== */
+.navbar {
+    position: absolute;
+    z-index: 999;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffcd5e; !important;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e68e0b; !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    font-weight: 700;
+    color: #e68e0b; !important;
+}
+/* ======================================== NAVBAR ======================================== */
+
+.carousel {
+    height: 100vh;
+}
+
+/* ======================================== MAIN ======================================== */
+.search-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    z-index: 999;
+}
 
 .carousel-img1,
 .carousel-img2,
 .carousel-img3 {
-    height: 30rem;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .carousel-img1 {
-    background-image: url("https://images.unsplash.com/photo-1599731316520-e9578fea922a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1041&q=80");
+    background-image: url("https://images.unsplash.com/photo-1580683742795-49989f7ecb72?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80");
 }
 
 .carousel-img2 {
@@ -27,24 +65,23 @@ a {
 }
 
 .carousel-img3 {
-    background-image: url("https://images.unsplash.com/photo-1614277936061-7faea346e126?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-image: url("https://images.unsplash.com/photo-1576488489579-6967c02c56fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
 }
 
-.country-dish-grid-container {
-
+.dish-card {
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.card {
-  border-radius: 1.7rem;
-}
-
-.card:hover {
-  transition: 0.5s;
-  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
+.dish-card:hover {
+    transition: 0.5s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 .card-img-top {
-    border-radius: 1.7rem;
+    border-radius: 10px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -94,8 +131,9 @@ a {
 #recommendation {
     display: flex;
 }
+/* ======================================== MAIN ======================================== */
 
-/* ==========================FOOTER=================== */
+/* ======================================== FOOTER ======================================== */
 .footer {
   padding-top: 15px;
   background-color: rgb(39, 38, 38);
@@ -139,9 +177,10 @@ a {
 .nav-icon {
   padding: 5px;
 }
+/* ======================================== FOOTER ======================================== */
 
-/*===== MEDIA QUERIES  =====*/
-/* x-small  */
+/* ======================================== MEDIA QUERY ======================================== */
+/* -------------------- x-small -------------------- */
 @media screen and (max-width: 575px) {
     .country-dish-grid-container {
         padding: 1rem;
@@ -149,7 +188,7 @@ a {
         grid-template-columns: 50% 50%;
     }
 
-    .card {
+    .dish-card {
         margin: .5rem;
     }
 
@@ -166,9 +205,13 @@ a {
         font-size: 1rem;
     }
 
-}
+    .recommendation-container {
 
-/* small */
+    }
+}
+/* -------------------- x-small -------------------- */
+
+/* -------------------- small -------------------- */
 @media screen and (min-width: 576px) and (max-width: 767px) {
     .country-dish-grid-container {
         padding: 1rem;
@@ -176,7 +219,7 @@ a {
         grid-template-columns: 50% 50%;
     }
 
-    .card {
+    .dish-card {
         margin: .5rem;
     }
 
@@ -189,8 +232,9 @@ a {
         height: 10rem;
     }
 }
+/* -------------------- small -------------------- */
 
-/* medium */
+/* -------------------- medium -------------------- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .country-dish-grid-container {
         padding: 1rem;
@@ -198,12 +242,13 @@ a {
         grid-template-columns: 50% 50%;
     }
 
-    .card {
+    .dish-card {
         margin: .5rem;
     }
 }
+/* -------------------- medium -------------------- */
 
-/* large */
+/* -------------------- large -------------------- */
 @media screen and (min-width: 992px) {
     .country-dish-grid-container {
         padding: 1rem;
@@ -211,7 +256,9 @@ a {
         grid-template-columns: 33.33% 33.33% 33.33%;
     }
 
-    .card {
+    .dish-card {
         margin: .5rem;
     }
 }
+/* -------------------- large -------------------- */
+/* ======================================== MEDIA QUERY ======================================== */
