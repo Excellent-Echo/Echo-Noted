@@ -24,10 +24,6 @@
                                 <a href="">
                                     <h6 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h6>
                                 </a>
-
-                                <div class ="submitBtn">
-                                    <input class="btn btn-primary" type="submit" value="Wishlist" id="wishlistButton">                                   
-                                </div>
                             </div>
                         </div>
                 </div>`

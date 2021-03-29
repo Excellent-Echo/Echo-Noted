@@ -18,8 +18,30 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../css/style.css">
   </head>
   <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="/">
+              <img src="../../images/logo2.jpg" width="35" height="35" class="d-inline-block align-top" alt="">
+          Echo Noted
+          </a>
+
+      <form class="d-flex">
+          <a href="../cart/index.html" class="nav-icon" style="color: rgba(255,255,255,.55)">
+              <i class="fas fa-shopping-cart fa-lg" id="cart" aria-hidden="true"></i>
+          </a>
+
+          <a href="../wishlist/index.html" class="nav-icon" style="color: rgba(255,255,255,.55)">
+              <i class="fas fa-heart fa-lg" id="wishlist" aria-hidden="true"></i>
+          </a>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+      </form>
+      </div>
+    </nav>
+
     <div class="container-fluid details-section">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -39,5 +61,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/6645177271.js" crossorigin="anonymous"></script>
   </body>
 </html>
