@@ -1,5 +1,6 @@
 // window.onload = function() {
-    const apiKey = ["80e73835c8934c0a8f67600904977073", "83f2261f53d549ad8d8451ba2ebde399", "10baa3c3fcac490ab89f070dd6a19ba9"]
+    // const apiKey = ["80e73835c8934c0a8f67600904977073", "83f2261f53d549ad8d8451ba2ebde399", "10baa3c3fcac490ab89f070dd6a19ba9"]
+    const apiKey = ["d624b4c0731e4398904c190db5bb6783", "1c0f1e0838ad44e8aaccbd48b5375f7b","337cb9cb85fa416bbdf29e69ef8d39d9"]
     const random = Math.floor(Math.random() * apiKey.length)
     const randomAPIKey = apiKey[random]
 
@@ -15,15 +16,15 @@
                 content += 
                 `<div class="col-md-3">
                         <div class="card">
-                            <a href="">
+                            
                                <div onClick="detail(event, ${element.id})">
                                     <img src="${element.image}" class="card-img-top" height="250px">
                                </div>
-                            </a>
+                            
                             <div class="card-body">
-                                <a href="">
-                                    <h6 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h6>
-                                </a>
+                                
+                                    <h4 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h4>
+                                
                             </div>
                         </div>
                 </div>`
