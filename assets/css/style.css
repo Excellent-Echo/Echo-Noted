@@ -7,12 +7,36 @@
 a {
     text-decoration: none;
 }
+/* ======================================== NAVBAR ======================================== */
+.navbar {
+    position: absolute;
+    z-index: 999;
+    /*width: 90vw;*/
+}
+/* ======================================== NAVBAR ======================================== */
+
+.carousel {
+    height: 100vh;
+}
 
 /* ======================================== MAIN ======================================== */
+.search-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    z-index: 999;
+}
+
 .carousel-img1,
 .carousel-img2,
 .carousel-img3 {
-    height: 30rem;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -219,10 +243,6 @@ a {
 
     .dish-card {
         margin: .5rem;
-    }
-
-    .recommendation-container {
-        display: none;
     }
 }
 /* -------------------- large -------------------- */
