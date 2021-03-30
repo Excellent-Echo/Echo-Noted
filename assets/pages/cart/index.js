@@ -48,6 +48,12 @@ const formHandle = (e) => {
 	.then(response => response.json())
 	.then(data => {
 	console.log('Success:', data);
+
+	Swal.fire(
+		'Good job!',
+		'Berhasil menambahkan wishlist!',
+		'success'
+	  )
 	})
 	.catch((error) => {
 	console.error('Error:', error);

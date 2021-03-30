@@ -18,37 +18,55 @@ const fetchApi = (id) => {
 		console.log(data);
 		let content = `
 			<div class="row">
-				<div class="col-md-5">
-					<div class="box-image">
-						<img src="${data.image}" width="100%" alt="gambar makanan" />
+				<div class="col-4">
+					<div class="row">
+						<div class="box-image">
+							<img src="${data.image}" width="100%" alt="gambar makanan" />
+						</div>
+					</div>
+
+					<div class="row information">
+						<div class="col information-content my-2">
+							<i class="fas fa-tags fa-2x"></i>
+							<h6>${data.pricePerServing}$ per serving</h6>
+						</div>
+
+						<div class="col information-content my-2">
+							<i class="fas fa-clock fa-2x"></i>
+							<h6>Ready in ${data.readyInMinutes} minutes</h6>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-7">
-					<div class="my-2">
-						<h2>${data.title}</h2>
+
+				<div class="col-8">
+					<div class="row">
+						<h3 class="summary">${data.title}</h3>
 					</div>
 
-					<p>${data.summary}</p>
-						<p class="price">
-						<i class="fas fa-tags"></i>
-						<span class="box-price">${data.pricePerServing}$</span>
-					</p>
+					<div class="row my-2">
+						<p class="summary">${data.summary}</p>
+						</p>
+					</div>
 
-					<div class ="submitBtn">
-						<input class="btn btn-primary" type="submit" value="Wishlist" onclick="getByID(event, ${data.id})">                                   
-					</div>
-					
-					<div class="social-media">
-						<a href="https://www.instagram.com" target="_blank">
-						<i class="fab fa-2x fa-instagram"></i
-						></a>
-						<a href="https://www.facebook.com" target="_blank">
-						<i class="fab fa-2x fa-facebook"></i
-						></a>
-						<a href="https://www.twitter.com" target="_blank"
-						><i class="fab fa-2x fa-twitter-square"></i
-						></a>
-					</div>
+					<div class="row">
+						<div class ="submitBtn">
+							<input class="btn btn-primary" type="submit" value="Wishlist" onclick="getByID(event, ${data.id})">                                   
+						</div>
+					</div>	
+
+					<div class="row">
+						<div class="social-media">
+							<a href="https://www.instagram.com" target="_blank">
+							<i class="fab fa-2x fa-instagram"></i></a>
+
+							<a href="https://www.facebook.com" target="_blank">
+							<i class="fab fa-2x fa-facebook"></i></a>
+
+							<a href="https://www.twitter.com" target="_blank">
+							<i class="fab fa-2x fa-twitter-square"></i></a>
+						</div>
+
+					</div>	
 				</div>
 			</div>
 		`
@@ -58,19 +76,19 @@ const fetchApi = (id) => {
 		let menuLink = document.createElement('a');
 		let linkText = ""
 		
-		if(url == "http://127.0.0.1:5500/category/korean/") {
+		if(url == "http://127.0.0.1:5500/assets/category/korean/") {
 			linkText = document.createTextNode("Korean Dish");
 			menuLink.appendChild(linkText);
-		} else if (url == "http://127.0.0.1:5500/category/chinese/") {
+		} else if (url == "http://127.0.0.1:5500/assets/category/chinese/") {
 			linkText = document.createTextNode("Chinese Dish");
 			menuLink.appendChild(linkText);
-		} else if (url == "http://127.0.0.1:5500/category/indian/") {
+		} else if (url == "http://127.0.0.1:5500/assets/category/indian/") {
 			linkText = document.createTextNode("Indian Dish");
 			menuLink.appendChild(linkText);
-		} else if (url == "http://127.0.0.1:5500/category/italian/") {
+		} else if (url == "http://127.0.0.1:5500/assets/category/italian/") {
 			linkText = document.createTextNode("Italian Dish");
 			menuLink.appendChild(linkText);
-		} else if (url == "http://127.0.0.1:5500/category/japanese/") {
+		} else if (url == "http://127.0.0.1:5500/assets/category/japanese/") {
 			linkText = document.createTextNode("Japanese Dish");
 			menuLink.appendChild(linkText);
 		} else {
@@ -98,6 +116,12 @@ const getByID = (event, id) => {
 			image: data.image
 		}
 	
-		localStorage.setItem('wishlist', JSON.stringify(wishlistData))	
+		localStorage.setItem('wishlist', JSON.stringify(wishlistData))
+
+		Swal.fire(
+			'Good job!',
+			'Menambahkan makanan ke dalam cart!',
+			'success'
+		  )
 	})
 }
