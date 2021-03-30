@@ -23,7 +23,7 @@
                             
                             <div class="card-body">
                                 
-                                    <h5 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h5>
+                                    <h6 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h6>
                                 
                             </div>
                         </div>
