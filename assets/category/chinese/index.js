@@ -40,7 +40,7 @@
         event.preventDefault()
         localStorage.setItem('dishID', id)
         localStorage.setItem("url",url)
-        window.location.replace('/pages/details/index.html')
+        window.location.replace('/assets/pages/details/index.html')
     }
 // }
 
