@@ -1,24 +1,3 @@
-// const saveWishlist = () => {
-// 		document.getElementById("wishlist").innerHTML = 
-// 		`<table class="table table-hover">
-// 			<thead>
-// 			  <tr>
-// 				<th scope="col">No</th>
-// 				<th scope="col" width="30%">Image</th>
-// 				<th scope="col">Dish</th>
-// 			  </tr>
-// 			</thead>
-// 			<tbody>
-// 			  <tr>
-// 				<th scope="row">1</th>
-// 				<td><img src="${storage.image}" class="card-img-top cart-image" alt="image"></td>
-// 				<td>${storage.title}</td>
-// 			  </tr>
-// 			</tbody>
-// 		</table>`
-// }
-// saveWishlist()
-
 const endPoint = "https://605f03ffe96e5c00174080e1.mockapi.io/api/v1/wishlist"
 const wishlist = document.getElementById("wishlist-item")
 
@@ -27,19 +6,33 @@ const fetchApi = () => {
 	.then(response => response.json())
 	 .then(data => {
 		 console.log(data);
-		let content = ""
+		let content = `
+		<table class="table">
+			<thead>
+				<tr>
+					<th width="5%">No</th>
+					<th width="20%">Name</th>
+					<th width="20%">Email</th>
+					<th width="15%">Phone Number</th>
+					<th width="15%">Image</th>
+					<th width="25%">Dish</th>
+				</tr>
+			</thead>
+		</table>`
 		let contentData = data.forEach(element => { 
-			content += 
-			`<tbody>
-				  <tr>
-					<th scope="row">${element.id}</th>
-					<td>${element.name}</td>
-					<td>${element.email}</td>
-					<td>${element.phone}</td>
-					<td><img src="${element.dish.image}" class="card-img-top cart-image" alt="image"></td>
-					<td>${element.dish.title}</td>
-				  </tr>
-				</tbody>`
+			content +=
+			`<table class="table">
+				<tbody>
+					<tr>
+						<th scope="row" width="5%">${element.id}</th>
+							<td width="20%">${element.name}</td>
+							<td width="20%">${element.email}</td>
+							<td width="15%">${element.phone}</td>
+							<td width="15%"><img src="${element.dish.image}" class="card-img-top cart-image" alt="image"></td>
+							<td width="25%">${element.dish.title}</td>
+					</tr>
+				</tbody>
+			</table>`
 		});
 
 		wishlist.innerHTML = content

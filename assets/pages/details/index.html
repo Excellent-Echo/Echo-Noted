@@ -23,59 +23,63 @@
 	</head>
 
 	<body>
+		<!-- navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid fixed-top">
 			<div class="container">
-					<div>
-							<a class="navbar-brand" href="/">
-									<img src="../../img/echo-noted.png" alt="Echo Noted Icon" width="50">
-									Echo Noted
-							</a>
-					</div>
+				<div>
+					<a class="navbar-brand" href="/">
+						<img src="../../img/echo-noted.png" alt="Echo Noted Icon" width="50">
+						Echo Noted
+					</a>
+				</div>
 
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-							<div class="navbar-nav">
-									<a class="nav-link active" aria-current="page" href="#">Home</a>
-									<div class="nav-item dropdown">
-											<a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-													Dish by Country
-													<i class='bx bxs-chevron-down'></i>
-											</a>
-											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-													<li><a class="dropdown-item" href="./assets/category/chinese">Chinese</a></li>
-													<li><a class="dropdown-item" href="./assets/category/indian">Indian</a></li>
-													<li><a class="dropdown-item" href="./assets/category/italian">Italian</a></li>
-													<li><a class="dropdown-item" href="./assets/category/japanese">Japanese</a></li>
-													<li><a class="dropdown-item" href="./assets/category/korean">Korean</a></li>
-													<li><a class="dropdown-item" href="./assets/category/middle-eastern">Middle East</a></li>
-											</ul>
-									</div>
-									<a class="nav-link" href="./assets/pages/wishlist">Wishlist</a>
-									<a class="nav-link" href="./assets/pages/wishlist">Our Teams</a>
-									<a class="nav-link" href="./assets/pages/wishlist">Contact</a>
-							</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link" aria-current="page" href="/">Home</a>
+						<div class="nav-item dropdown">
+							<a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Dish by Country
+								<i class='bx bxs-chevron-down'></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="/assets/category/chinese/">Chinese</a></li>
+								<li><a class="dropdown-item" href="/assets/category/indian">Indian</a></li>
+								<li><a class="dropdown-item" href="/assets/category/italian">Italian</a></li>
+								<li><a class="dropdown-item" href="/assets/category/japanese">Japanese</a></li>
+								<li><a class="dropdown-item" href="/assets/category/korean">Korean</a></li>
+								<li><a class="dropdown-item" href="/assets/category/middle-eastern">Middle East</a></li>
+							</ul>
+						</div>
+						<a class="nav-link" href="/assets/pages/wishlist">Wishlist</a>
+						<a class="nav-link" href="/#">Our Teams</a>
+						<a class="nav-link" href="/#">Contact</a>
 					</div>
+				</div>
 			</div>
 		</nav>
+		<!-- navbar -->
 
 		<div class="container details-section">
-			<nav aria-label="breadcrumb">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="/">Home</a></li>
-					<li class="breadcrumb-item" id="menu"></li>
-					<li class="breadcrumb-item active" aria-current="page" id="dish-breadcumb"></li>
-				</ol>
-			</nav>
-
-			<div id="details-section"></div>
+			<div class="title">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+						<li class="breadcrumb-item" id="menu"></li>
+						<li class="breadcrumb-item active" aria-current="page" id="dish-breadcumb"></li>
+					</ol>
+				</nav>
+			</div>
+	
+			<div class="row" id="details-section"></div>
 		</div>
 
 		<!-- Footer -->
-		<div class="container-fluid footer-box">
+		<footer class="container-fluid">
 			<div class="row footer">
-				<div class="col">
+				<div class="col-3">
 					<h3>Echo-Noted</h3>
 					<p>Cari makanan dari berbagai negara sesuai yang kamu mau</p>
 				</div>
@@ -83,8 +87,11 @@
 					<ul>
 						<h6>NEGARA ASAL</h6>
 						<li><a href="">Chinese</a></li>
-						<li><a href="">Korean</a></li>
+						<li><a href="">Indian</a></li>
+						<li><a href="">Italian</a></li>
 						<li><a href="">Japanese</a></li>
+						<li><a href="">Korean</a></li>
+						<li><a href="">Middle Eastern</a></li>
 					</ul>
 				</div>
 				<div class="col list-country">
@@ -119,16 +126,16 @@
 					<ul>
 						<h6>TAUTAN SOSIAL</h6>
 							<li><a href=""></a><img src="https://www.transparentpng.com/thumb/facebook-logo-png/background-facebook-logo-5.png" style="width:40%"></i><img src="https://www.transparentpng.com/thumb/twitter/twitter-style-icons-png-6.png" style="width:30%"></i></li>
-							<li><a href=""></a><img src="./images/PLAYSTORE.png" style="width:40%"><img src="../../images/APPSTORE.png"style="width:40%"></li>
+							<li><a href=""></a><img src="/assets/images/PLAYSTORE.png" style="width:40%"><img src="/assets/images/APPSTORE.png" style="width:40%"></li>
 					</ul>
 				</div>
 			</div>
 			<div class="row copyright">
 				<div class="col-md-12">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
-					Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021
-					© Echo Noted™ Pvt Ltd. All rights reserved.</div>
+					Privacy Policy and Content Policies. All trademarks are properties of their respective owners. <br>
+					2008-2021© Echo Noted™ Pvt Ltd. All rights reserved.</div>
 			</div>
-		</div>
+		</footer>
 		<!-- Footer -->
 	
 		<!-- JavaScript Bundle with Popper -->
