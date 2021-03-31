@@ -1,9 +1,11 @@
-.details-section {
-  margin-top: 100px;
+.title {
+	margin: 20px 0px;
 }
+
 .box-image {
   width: 100%;
 }
+
 .box-image img {
   border-radius: 30px 30px;
 }
@@ -18,6 +20,7 @@
   color: white;
   padding: 2px 4px 2px 4px;
 }
+
 .price .box-price span {
   font-size: 10px;
 }
