@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    /* height: 100vgh; */
 }
 
 a {
@@ -14,17 +15,17 @@ a {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #ffcd5e; !important;
+    color: #ffcd5e !important;
     font-weight: 500;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #e68e0b; !important;
+    color: #e68e0b !important;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
     font-weight: 700;
-    color: #e68e0b; !important;
+    color: #e68e0b !important;
 }
 /* ======================================== NAVBAR ======================================== */
 
@@ -66,7 +67,7 @@ a {
 /* ======================================== FOOTER ======================================== */
 .footer {
   padding-top: 15px;
-  background-color: rgb(39, 38, 38);
+  background-color: #212529;
   color: rgb(207, 203, 203);
 }
 .footer h3 {
@@ -85,6 +86,7 @@ a {
 
 .footer .list-country li {
   list-style-type: none;
+  font-size: 1rem;
 }
 
 .footer .list-country li a {
@@ -96,17 +98,33 @@ a {
 }
 
 .copyright {
-  background-color: rgb(39, 38, 38);
+  background-color: #212529;
   color: rgb(236, 235, 235);
   border-top: 1px solid white;
   text-align: center;
   padding-bottom: 5px;
+  font-size: 0.8rem;
 }
 
 .nav-icon {
   padding: 5px;
 }
 /* ======================================== FOOTER ======================================== */
+
+.category-section {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.details-section {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.wishlist-section {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
 
 /* ======================================== MEDIA QUERY ======================================== */
 /* -------------------- x-small -------------------- */

@@ -1,12 +1,17 @@
-.details-section {
-  padding: 50px;
-  background-color: #f5f5f5;
+.title {
+	margin: 20px 0px;
 }
+
 .box-image {
   width: 100%;
 }
+
 .box-image img {
-  border-radius: 30px 0 30px 0;
+  border-radius: 30px 30px;
+}
+
+.summary {
+  text-align: justify;
 }
 
 .price .box-price {
@@ -15,6 +20,7 @@
   color: white;
   padding: 2px 4px 2px 4px;
 }
+
 .price .box-price span {
   font-size: 10px;
 }
@@ -33,4 +39,17 @@
 }
 .social-media .fa-twitter-square {
   color: #1da1f2;
+}
+
+.information {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.information-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

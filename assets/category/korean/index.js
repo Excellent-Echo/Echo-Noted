@@ -15,15 +15,15 @@
                 content += 
                 `<div class="col-md-3">
                         <div class="card">
-                            <a href="">
+  
                                <div onClick="detail(event, ${element.id})">
                                     <img src="${element.image}" class="card-img-top" height="250px">
                                </div>
-                            </a>
+
                             <div class="card-body">
-                                <a href="">
-                                    <h4 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h4>
-                                </a>
+
+                                    <h6 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h6>
+
                             </div>
                         </div>
                 </div>`
@@ -41,5 +41,5 @@
         event.preventDefault()
         localStorage.setItem('dishID', id)
         localStorage.setItem("url",url)
-        window.location.replace('/pages/details/index.html')
+        window.location.replace('/assets/pages/details/index.html')
     }

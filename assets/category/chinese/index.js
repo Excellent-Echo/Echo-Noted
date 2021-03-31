@@ -21,7 +21,7 @@
                                </div>
                             <div class="card-body">
                         
-                                    <h4 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h4>
+                                    <h6 class="card-title" onClick="detail(event, ${element.id})">${element.title}</h6>
                                 
                             </div>
                         </div>
@@ -40,7 +40,7 @@
         event.preventDefault()
         localStorage.setItem('dishID', id)
         localStorage.setItem("url",url)
-        window.location.replace('/pages/details/index.html')
+        window.location.replace('/assets/pages/details/index.html')
     }
 // }
 
