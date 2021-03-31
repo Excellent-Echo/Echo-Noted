@@ -1,4 +1,11 @@
 # Echo-Noted
+| Name                  | Github   |
+|-----------------------|----------|
+| Pandu Wilanthara      |          |
+| Muhammad Fauzul Hanif |          |
+| Briyan                |          |
+| Danang Estutomoaji    | [danangtomo](https://github.com/danangtomo) |
+| Angga Prasetya Wibawa | [anggapw](https://github.com/anggapw) |
 
 ## API
 - https://spoonacular.com/food-api/docs
