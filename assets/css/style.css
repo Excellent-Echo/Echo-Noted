@@ -28,22 +28,9 @@ a {
 }
 /* ======================================== NAVBAR ======================================== */
 
+/* ======================================== MAIN ======================================== */
 .carousel {
     height: 100vh;
-}
-
-/* ======================================== MAIN ======================================== */
-.search-container {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    /*display: flex;*/
-    align-items: center;
-    justify-content: center;
-}
-
-.search-bar {
-    z-index: 999;
 }
 
 .carousel-img1,
@@ -65,62 +52,6 @@ a {
 
 .carousel-img3 {
     background-image: url("https://images.unsplash.com/photo-1576488489579-6967c02c56fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-}
-
-.dish-card {
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.dish-card:hover {
-    transition: 0.5s;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-}
-
-.card-img-top {
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.chinese,
-.korean,
-.japanese,
-.italian,
-.indian,
-.middle-eastern {
-    height: 15rem;
-}
-
-.chinese {
-    background-image: url("http://1.bp.blogspot.com/-1ZmtEmTRT5k/U_1tyO_7UzI/AAAAAAAABVg/se3xQ7CuC3M/s1600/Asian+Slaw+3.jpg");
-}
-
-.korean {
-    background-image: url("https://i.pinimg.com/564x/d6/53/f2/d653f278243751804f29b4420afa6072.jpg");
-}
-
-.japanese {
-    background-image: url("https://i.pinimg.com/564x/7f/2a/17/7f2a175fa81e9d0b43b62a1069b40d9b.jpg");
-}
-
-.italian {
-    background-image: url("https://i.pinimg.com/564x/b9/84/dd/b984dde64142bab6166ac7888610ab6a.jpg");
-}
-
-.indian {
-    background-image: url("https://i.pinimg.com/564x/a7/96/be/a796be6d625230f0b33678fe4ad3e1ee.jpg");
-}
-
-.middle-eastern {
-    background-image: url("https://i.pinimg.com/564x/57/82/e5/5782e5170f8992628796c0cd8b72c19b.jpg");
-}
-
-.card-subtitle {
-    font-weight: 500;
 }
 
 .recommendation-container > h3 {
@@ -180,83 +111,31 @@ a {
 /* ======================================== MEDIA QUERY ======================================== */
 /* -------------------- x-small -------------------- */
 @media screen and (max-width: 575px) {
-    .country-dish-grid-container {
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 50% 50%;
+    .navbar {
+        padding: 0;
     }
 
-    .dish-card {
-        margin: .5rem;
-    }
-
-    .chinese,
-    .korean,
-    .japanese,
-    .italian,
-    .indian,
-    .middle-eastern {
-        height: 7rem;
-    }
-
-    .card-subtitle {
-        font-size: 1rem;
-    }
-
-    .recommendation-container {
-
+    .brand-name {
+        display: none;
     }
 }
 /* -------------------- x-small -------------------- */
 
 /* -------------------- small -------------------- */
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    .country-dish-grid-container {
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
 
-    .dish-card {
-        margin: .5rem;
-    }
-
-    .chinese,
-    .korean,
-    .japanese,
-    .italian,
-    .indian,
-    .middle-eastern {
-        height: 10rem;
-    }
 }
 /* -------------------- small -------------------- */
 
 /* -------------------- medium -------------------- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .country-dish-grid-container {
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
 
-    .dish-card {
-        margin: .5rem;
-    }
 }
 /* -------------------- medium -------------------- */
 
 /* -------------------- large -------------------- */
 @media screen and (min-width: 992px) {
-    .country-dish-grid-container {
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 33.33% 33.33% 33.33%;
-    }
 
-    .dish-card {
-        margin: .5rem;
-    }
 }
 /* -------------------- large -------------------- */
 /* ======================================== MEDIA QUERY ======================================== */
