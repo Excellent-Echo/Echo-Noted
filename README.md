@@ -1,4 +1,4 @@
-# Echo-Noted
+# EXCHO RESTAURANT
 
 ## API
 - https://spoonacular.com/food-api/docs
@@ -9,4 +9,4 @@
 - User bisa melihat wishlist dan search berdasarkan nama/nomor handphone
 
 ## URL
-[Echo Noted](https://echo-noted.netlify.app/)
+[Excho Restaurant](https://echo-noted.netlify.app/)
