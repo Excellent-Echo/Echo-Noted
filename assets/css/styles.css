@@ -236,9 +236,19 @@ footer p i {
 .tips .health-tips ul {
   list-style-image: url(../svg/leaf.svg);
 }
+.tips .health-tips ul li {
+  font-weight: 200;
+}
 
 .tips .cooking-tips ul {
   list-style-image: url(../svg/cooking.svg);
+}
+.tips .cooking-tips ul li {
+  font-weight: 200;
+}
+
+.modal-dialog {
+  margin-left: -1%;
 }
 
 /* ======================================== WISHLIST ======================================== */

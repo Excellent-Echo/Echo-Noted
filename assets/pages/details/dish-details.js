@@ -57,8 +57,64 @@ const fetchApi = (id) => {
 					</div>
 
 					<div class="row">
-						<div class ="submitBtn">
+						<!--<div class ="submitBtn">
 							<input class="btn btn-primary" type="submit" value="Wishlist" onclick="getByID(event, ${data.id})">                                   
+						</div>-->
+
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Wishlist
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-fullscreen">
+							<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Wishlist</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-md-4">
+										<form>
+											<div class="mb-3">
+												<label for="nama" class="form-label">Nama</label>
+												<input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
+											</div>
+											<div class="mb-3">
+												<label for="email" class="form-label">Email address</label>
+												<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+											</div>
+											<div class="mb-3">
+												<label for="phone" class="form-label">Phone number</label>
+												<input type="text" class="form-control" id="phone" aria-describedby="emailHelp">
+											</div>
+											<button type="submit" class="btn btn-primary">Submit</button>
+										</form>
+									</div>
+									<div class="col-md-8">
+										<table class="table">
+											<thead>
+												<tr>
+												<th scope="col">#</th>
+												<th scope="col">Image</th>
+												<th scope="col">Dish</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+												<th scope="row">1</th>
+												<td><img src="" alt="img" /></td>
+												<td>lorem ipsum dolor sit amet</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
 						</div>
 					</div>	
 
@@ -73,12 +129,11 @@ const fetchApi = (id) => {
 							<a href="https://www.twitter.com" target="_blank">
 							<i class="fab fa-2x fa-twitter-square"></i></a>
 						</div>
-
 					</div>	
 				</div>
 			</div>
 
-			<div class="row tips">
+			<div class="row tips mt-5">
 				<div class="col-md-6 health-tips">
 					<h4>Health Tips</h4>
 					<ul>
@@ -154,7 +209,7 @@ const getByID = (event, id) => {
         image: data.image,
       };
 
-      localStorage.setItem("wishlist", JSON.stringify(wishlistData));
+      localStorage.setItem("", JSON.stringify(wishlistData));
 
       Swal.fire("Good job!", "Menambahkan makanan ke dalam cart!", "success");
     });
