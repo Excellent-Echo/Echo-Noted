@@ -9,16 +9,19 @@ const apiKey = [
 const random = Math.floor(Math.random() * apiKey.length);
 const randomAPIKey = apiKey[random];
 const endPoint = `https://api.spoonacular.com/recipes/random?number=12&apiKey=${randomAPIKey}`;
-const recommendation = document.getElementById("recommendation");
+const recommendation = document.getElementById("recommendation-item");
 
 const fetchAPI = _ => {
     fetch(endPoint).then(response => response.json()).then(data => {
         let content = "";
         let contentData = data.recipes.forEach(element => {
-            content += `<div class="card col mx-3" 
+            content += `<div class="card" 
                              onclick="detail(event, ${element.id})"
                              style="width: 15rem">
-                            <img src="${element.image}" onerror="this.onerror=null; this.src='assets/img/image-not-available.jpg'"  alt="${element.title}" class="card-img-top" width="100%">
+                            <img src="${element.image}" 
+                                 onerror="this.onerror=null; this.src='assets/img/image-not-available.jpg'"  
+                                 alt="${element.title}" 
+                                 class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">${element.title}</h5>
                             </div>

@@ -1,0 +1,40 @@
+header {
+    border-bottom: 1px solid #d9d9d9;
+    position: sticky;
+    top: 0;
+}
+
+header .navbar {
+    padding: 1rem 0;
+    background-color: #f2f2f2;
+}
+
+/* ======================================== MEDIA QUERY ======================================== */
+/* -------------------- x-small -------------------- */
+@media screen and (max-width: 575px) {
+    header .navbar-brand span {
+        display: none;
+    }
+}
+/* -------------------- x-small -------------------- */
+
+/* -------------------- small -------------------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {}
+/* -------------------- small -------------------- */
+
+/* -------------------- medium -------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+/* -------------------- medium -------------------- */
+
+/* -------------------- large -------------------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+/* -------------------- large -------------------- */
+
+/* -------------------- extra large -------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {}
+/* -------------------- x-large -------------------- */
+
+/* -------------------- xx-large -------------------- */
+@media screen and (min-width: 1400px) {}
+/* -------------------- xx-large -------------------- */
+/* ======================================== MEDIA QUERY ======================================== */
