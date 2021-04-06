@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
 *,
 main .hero-left-bottom h5,
@@ -7,174 +7,172 @@ main .recommendation .card-title,
 footer .footer-top h3,
 footer .footer-top h5,
 footer .footer-top h6 {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bolder;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
 }
 
 * a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* ======================================== HOME PAGE ======================================== */
 header {
-    border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 header .navbar {
-    padding: 1rem 0;
-    background-color: #fff;
+  padding: 1rem 0;
+  background-color: #fff;
 }
 
 header .navbar .active {
-    color: #ffb341;
+  color: #ffb341;
 }
 
 header .navbar .navbar-nav a:hover {
-    color: #ffb341;
+  color: #ffb341;
 }
 
 main .hero {
-    display: flex;
+  display: flex;
 }
 
 main .hero-left,
 main .hero-right {
-    width: 100%;
+  width: 100%;
 }
 
 main .hero-left-top .slogan {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 main .hero-left-top p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 main .hero-left-top button {
-    background-color: #ffcd5e;
-    box-shadow: 0 8px 32px 0 rgba(255, 179, 65, 0.37);
-    border: none;
-    padding: 1rem 5rem;
-    border-radius: 100rem;
-    margin-bottom: 5rem;
+  background-color: #ffcd5e;
+  box-shadow: 0 8px 32px 0 rgba(255, 179, 65, 0.37);
+  border: none;
+  padding: 1rem 5rem;
+  border-radius: 100rem;
+  margin-bottom: 5rem;
 }
 
 main .hero-left-top button:hover {
-    background-color: #ffb341;
+  background-color: #ffb341;
 }
 
 main .hero-left-bottom {
-    display: flex;
+  display: flex;
 }
 
 main .hero-left-bottom .info {
-    flex-direction: column;
-    margin-right: 3rem;
+  flex-direction: column;
+  margin-right: 3rem;
 }
 
 main .hero-left-bottom .info i {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
 main .hero-left-bottom .info h5 span {
-    color: #ffb341;
+  color: #ffb341;
 }
 
 main .hero-right .carousel-indicators button {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
 }
 
 .carousel-img1,
 .carousel-img2,
 .carousel-img3 {
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-img1 {
-    background-image: url("https://images.unsplash.com/photo-1580683742795-49989f7ecb72?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80");
+  background-image: url("https://images.unsplash.com/photo-1580683742795-49989f7ecb72?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80");
 }
 
 .carousel-img2 {
-    background-image: url("https://images.unsplash.com/photo-1541921671-016ccc70f7cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1343&q=80");
+  background-image: url("https://images.unsplash.com/photo-1541921671-016ccc70f7cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1343&q=80");
 }
 
 .carousel-img3 {
-    background-image: url("https://images.unsplash.com/photo-1576488489579-6967c02c56fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-image: url("https://images.unsplash.com/photo-1576488489579-6967c02c56fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
 }
 
 main .recommendation .card {
-    border-radius: .75rem;
-    padding: 0;
-    margin: 1rem;
-    border: none;
+  border-radius: 0.75rem;
+  padding: 0;
+  margin: 1rem;
+  border: none;
 }
 
 main .recommendation .card:hover {
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: .5s;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 main .recommendation .card img {
-    border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 
 main .recommendation .card .card-title {
-    color: #000;
+  color: #000;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d9d9d9;
 }
 
 footer .footer-top {
-    display: flex;
+  display: flex;
 }
 
 footer .footer-top p,
 footer .footer-top h6,
 footer .footer-bottom {
-    color: #737373;
+  color: #737373;
 }
 
 footer .footer-top .footer-top-1,
 footer .footer-top .footer-top-2 {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 footer p i {
-  font-size: .3rem;
+  font-size: 0.3rem;
 }
 /* ======================================== HOME PAGE ======================================== */
 
-
 /* ======================================== CATEGORY DISH BY COUNTRY PAGE ======================================== */
 .dish-country-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur( 4px );
-                    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 31, 38, 135, 0.37 );
-    margin: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(31, 38, 135, 0.37);
+  margin: 1rem;
 }
 
 .dish-country-card:hover {
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 /* ======================================== CATEGORY DISH BY COUNTRY PAGE ======================================== */
 
-
 /* ======================================== DETAIL ======================================== */
 .title {
-	margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .box-image {
@@ -217,12 +215,12 @@ footer p i {
 }
 
 .information {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.information-content{
+.information-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -230,298 +228,314 @@ align-items: center;
 }
 /* ======================================== DETAIL ======================================== */
 
+.data-summary {
+  background-color: #f8f8f8;
+  font-weight: 300;
+}
+
+.tips .health-tips ul {
+  list-style-image: url(../svg/leaf.svg);
+}
+.tips .health-tips ul li {
+  font-weight: 200;
+}
+
+.tips .cooking-tips ul {
+  list-style-image: url(../svg/cooking.svg);
+}
+.tips .cooking-tips ul li {
+  font-weight: 200;
+}
+
+.modal-dialog {
+  margin-left: -1%;
+}
 
 /* ======================================== WISHLIST ======================================== */
 
 /* ======================================== WISHLIST ======================================== */
-
 
 /* ======================================== MEDIA QUERY ======================================== */
 /* -------------------- x-small -------------------- */
 @media screen and (max-width: 575px) {
-    header .navbar-brand span {
-        display: none;
-    }
+  header .navbar-brand span {
+    display: none;
+  }
 
-    main .hero {
-        margin: .7rem 0 3rem;
-        flex-direction: column-reverse;
-    }
+  main .hero {
+    margin: 0.7rem 0 3rem;
+    flex-direction: column-reverse;
+  }
 
-    main .hero-left-top .slogan {
-        margin: .3rem 0 0;
-        padding: 0;
-    }
+  main .hero-left-top .slogan {
+    margin: 0.3rem 0 0;
+    padding: 0;
+  }
 
-    main .hero-left-top p {
-        padding: 0;
-        margin: 0;
-    }
+  main .hero-left-top p {
+    padding: 0;
+    margin: 0;
+  }
 
-    main .hero-left-top button {
-        margin: 1rem 0 2rem;
-    }
+  main .hero-left-top button {
+    margin: 1rem 0 2rem;
+  }
 
-    main .hero-left-bottom .info h5 {
-        display: flex;
-    }
+  main .hero-left-bottom .info h5 {
+    display: flex;
+  }
 
-    main .hero-left-bottom .info h5 span {
-        margin-right: .5rem;
-    }
+  main .hero-left-bottom .info h5 span {
+    margin-right: 0.5rem;
+  }
 
-    main .recommendation {
-        margin: 0 1rem;
-    }
+  main .recommendation {
+    margin: 0 1rem;
+  }
 
-    main .recommendation h2 {
-        margin-bottom: 2rem;
-    }
+  main .recommendation h2 {
+    margin-bottom: 2rem;
+  }
 
-    footer .footer-top {
-        margin: .5rem 0;
-    }
+  footer .footer-top {
+    margin: 0.5rem 0;
+  }
 
-    footer .footer-bottom {
-        margin: 0;
-    }
+  footer .footer-bottom {
+    margin: 0;
+  }
 }
 /* -------------------- x-small -------------------- */
 
-
 /* -------------------- small -------------------- */
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    main .hero {
-        margin: 1.7rem 0 3rem;
-        flex-direction: column-reverse;
-    }
+  main .hero {
+    margin: 1.7rem 0 3rem;
+    flex-direction: column-reverse;
+  }
 
-    main .hero-left-top .slogan {
-        margin: .3rem 0 0;
-        padding: 0;
-    }
+  main .hero-left-top .slogan {
+    margin: 0.3rem 0 0;
+    padding: 0;
+  }
 
-    main .hero-left-top p {
-        padding: 0;
-        margin: 0;
-    }
+  main .hero-left-top p {
+    padding: 0;
+    margin: 0;
+  }
 
-    main .hero-left-top button {
-        margin: 1rem 0 2rem;
-    }
+  main .hero-left-top button {
+    margin: 1rem 0 2rem;
+  }
 
-    main .hero-left-bottom .info h5 {
-        display: flex;
-    }
+  main .hero-left-bottom .info h5 {
+    display: flex;
+  }
 
-    main .hero-left-bottom .info h5 span {
-        margin-right: .5rem;
-    }
+  main .hero-left-bottom .info h5 span {
+    margin-right: 0.5rem;
+  }
 
-    main .recommendation {
-        margin: 0 1rem;
-    }
+  main .recommendation {
+    margin: 0 1rem;
+  }
 
-    main .recommendation h2 {
-        margin-bottom: 2rem;
-    }
+  main .recommendation h2 {
+    margin-bottom: 2rem;
+  }
 
-    footer .footer-top {
-        margin: 1.5rem 0;
-    }
+  footer .footer-top {
+    margin: 1.5rem 0;
+  }
 
-    footer .footer-bottom {
-        margin: 0;
-    }
+  footer .footer-bottom {
+    margin: 0;
+  }
 }
 /* -------------------- small -------------------- */
-
 
 /* -------------------- medium -------------------- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    main .hero {
-        margin: 2rem 0 3rem;
-        flex-direction: column-reverse;
-    }
+  main .hero {
+    margin: 2rem 0 3rem;
+    flex-direction: column-reverse;
+  }
 
-    main .hero-left-top .slogan {
-        margin: .3rem 0 0;
-        padding: 0;
-    }
+  main .hero-left-top .slogan {
+    margin: 0.3rem 0 0;
+    padding: 0;
+  }
 
-    main .hero-left-top p {
-        padding: 0;
-        margin: 0;
-    }
+  main .hero-left-top p {
+    padding: 0;
+    margin: 0;
+  }
 
-    main .hero-left-top button {
-        margin: 1rem 0 2rem;
-    }
+  main .hero-left-top button {
+    margin: 1rem 0 2rem;
+  }
 
-    main .hero-left-bottom .info h5 {
-        display: flex;
-    }
+  main .hero-left-bottom .info h5 {
+    display: flex;
+  }
 
-    main .hero-left-bottom .info h5 span {
-        margin-right: .5rem;
-    }
+  main .hero-left-bottom .info h5 span {
+    margin-right: 0.5rem;
+  }
 
-    main .recommendation {
-        margin: 0 1rem;
-    }
+  main .recommendation {
+    margin: 0 1rem;
+  }
 
-    main .recommendation h2 {
-        margin-bottom: 2rem;
-    }
+  main .recommendation h2 {
+    margin-bottom: 2rem;
+  }
 
-    footer .footer-top {
-        margin: 1.7rem 0;
-    }
+  footer .footer-top {
+    margin: 1.7rem 0;
+  }
 
-    footer .footer-bottom {
-        margin: 0;
-    }
+  footer .footer-bottom {
+    margin: 0;
+  }
 }
 /* -------------------- medium -------------------- */
 
-
 /* -------------------- large -------------------- */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    main .hero {
-        margin: 1.5rem 0 3rem;
-    }
+  main .hero {
+    margin: 1.5rem 0 3rem;
+  }
 
-    main .hero-left-top .slogan {
-        margin: .3rem 0 0;
-        padding: 0;
-    }
+  main .hero-left-top .slogan {
+    margin: 0.3rem 0 0;
+    padding: 0;
+  }
 
-    main .hero-left-top p {
-        padding: 0;
-        margin: 0;
-    }
+  main .hero-left-top p {
+    padding: 0;
+    margin: 0;
+  }
 
-    main .hero-left-top button {
-        margin: 1rem 0 2rem;
-    }
+  main .hero-left-top button {
+    margin: 1rem 0 2rem;
+  }
 
-    main .hero-left-bottom .info h5 {
-        display: flex;
-    }
+  main .hero-left-bottom .info h5 {
+    display: flex;
+  }
 
-    main .hero-left-bottom .info h5 span {
-        margin-right: .5rem;
-    }
+  main .hero-left-bottom .info h5 span {
+    margin-right: 0.5rem;
+  }
 
-    main .recommendation {
-        margin: 0 1rem;
-    }
+  main .recommendation {
+    margin: 0 1rem;
+  }
 
-    main .recommendation h2 {
-        margin: 3rem;
-    }
+  main .recommendation h2 {
+      margin: 3rem;
+  }
 
-    footer .footer-top {
-        margin: 1.5rem 0;
-    }
+  footer .footer-top {
+    margin: 1.5rem 0;
+  }
 
-    footer .footer-bottom {
-        margin: 0;
-    }
+  footer .footer-bottom {
+    margin: 0;
+  }
 }
 /* -------------------- large -------------------- */
-
 
 /* -------------------- extra large -------------------- */
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-    main .hero {
-        margin: 2.3rem 0 3rem;
-    }
+  main .hero {
+    margin: 2.3rem 0 3rem;
+  }
 
-    main .hero-left-top .slogan {
-        margin: .3rem 0 0;
-        padding: 0;
-    }
+  main .hero-left-top .slogan {
+    margin: 0.3rem 0 0;
+    padding: 0;
+  }
 
-    main .hero-left-top p {
-        padding: 0;
-        margin: 0;
-    }
+  main .hero-left-top p {
+    padding: 0;
+    margin: 0;
+  }
 
-    main .hero-left-top button {
-        margin: 1rem 0 2rem;
-    }
+  main .hero-left-top button {
+    margin: 1rem 0 2rem;
+  }
 
-    main .hero-left-bottom .info h5 {
-        display: flex;
-    }
+  main .hero-left-bottom .info h5 {
+    display: flex;
+  }
 
-    main .hero-left-bottom .info h5 span {
-        margin-right: .5rem;
-    }
+  main .hero-left-bottom .info h5 span {
+    margin-right: 0.5rem;
+  }
 
-    main .recommendation {
-        margin: 0 1rem;
-    }
+  main .recommendation {
+    margin: 0 1rem;
+  }
 
-    main .recommendation h2 {
-        margin-bottom: 3rem;
-    }
+  main .recommendation h2 {
+    margin-bottom: 3rem;
+  }
 
-    footer .footer-top {
-        margin: 2rem 0;
-    }
+  footer .footer-top {
+    margin: 2rem 0;
+  }
 
-    footer .footer-bottom {
-        margin: 0;
-    }
+  footer .footer-bottom {
+    margin: 0;
+  }
 }
 /* -------------------- x-large -------------------- */
 
-
 /* -------------------- xx-large -------------------- */
 @media screen and (min-width: 1400px) {
-    main .hero {
-        margin: 2.8rem 0 3rem;
-    }
+  main .hero {
+    margin: 2.8rem 0 3rem;
+  }
 
-    main .hero-left-top .slogan {
-        margin: .3rem 0 0;
-        padding: 0;
-    }
+  main .hero-left-top .slogan {
+    margin: 0.3rem 0 0;
+    padding: 0;
+  }
 
-    main .hero-left-top p {
-        padding: 0;
-        margin: 0;
-    }
+  main .hero-left-top p {
+    padding: 0;
+    margin: 0;
+  }
 
-    main .hero-left-top button {
-        margin: 1rem 0 2rem;
-    }
+  main .hero-left-top button {
+    margin: 1rem 0 2rem;
+  }
 
-    main .hero-left-bottom .info h5 {
-        display: flex;
-    }
+  main .hero-left-bottom .info h5 {
+    display: flex;
+  }
 
-    main .hero-left-bottom .info h5 span {
-        margin-right: .5rem;
-    }
+  main .hero-left-bottom .info h5 span {
+    margin-right: 0.5rem;
+  }
 
-    main .recommendation {
-        margin: 0 1rem;
-    }
+  main .recommendation {
+    margin: 0 1rem;
+  }
 
-    main .recommendation h2 {
-        margin-bottom: 3rem;
-    }
+  main .recommendation h2 {
+    margin-bottom: 3rem;
+  }
 
-    footer .footer-top {
-        margin: 2.8rem 0;
-    }
+  footer .footer-top {
+    margin: 2.8rem 0;
+  }
 
-    footer .footer-bottom {
-        margin: 0;
-    }
+  footer .footer-bottom {
+    margin: 0;
+  }
 }
 /* -------------------- xx-large -------------------- */
 /* ======================================== MEDIA QUERY ======================================== */
