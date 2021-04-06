@@ -30,19 +30,7 @@
 					<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 						<ul class="navbar-nav">
 							<li><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
-							<li class="nav-item dropdown">
-								<a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Dish by Country <i class='bx bxs-chevron-down'></i>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="./assets/pages/category/chinese/chinese.html">Chinese</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/indian/indian.html">Indian</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/italian/italian.html">Italian</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/japanese/japanese.html">Japanese</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/korean/korean.html">Korean</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/middle-east/middle-east.html">Middle East</a></li>
-								</ul>
-							</li>
+							<li><a class="nav-link" href="#dish">Dish</a></li>
 							<li><a class="nav-link" href="#about">About</a></li>
 							<li><a class="nav-link" href="#team">Teams</a></li>
 							<li><a class="nav-link" href="#contact">Contact</a></li>
@@ -113,142 +101,123 @@
 			</section>
 			<!-- ---------- HERO ---------- -->
 
+			<!-- ---------- DISH ---------- -->
+			<section id="dish">
+				<h2>Dish</h2><hr>
+				<div class="justify-content-center" id="dish-item"></div>
+				<button onclick="">More Dish</button>
+			</section>
+			<!-- ---------- DISH ---------- -->
 
 			<!-- ---------- ABOUT ---------- -->
 			<section id="about">
-				<h2>About</h2>
-				<hr>
+				<h2>About</h2><hr>
 				<P>Excho Restaurant is a website that provides a variety of dishes with 5 star flavors that you can choose according to your own taste. Not only the dishes, but that you can see the ingredients for the ingredients, the prices, the cooking methods, etc.
 					<br><br>
 					This site is only a student project that uses the Public API, and apologize for any shortcomings.</P>
 			</section>
 			<!-- ---------- ABOUT ---------- -->
 
-
-			<!-- ---------- RECOMMENDATION DISH ---------- -->
-			<section class="border" id="recommendation">
-				<h2 class="border">Recommendation Dish</h2>
-				<hr>
-				<div class="justify-content-center border row row-cols-4" id="recommendation-item"></div>
-			</section>
-			<!-- ---------- RECOMMENDATION DISH ---------- -->
-
-
 			<!-- ---------- TEAM ---------- -->
-			<section id="team" class="border">
-				<h2 class="border">Our Teams</h2>
-				<div class=" border row row-cols-4 gap-3 justify-content-center">
+			<section id="team">
+				<h2>Our Teams</h2><hr>
+				<div class="justify-content-center" id="team-item">
 					<!--1-->
-					<div class="card__glass ">
-						<img src="https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.6435-9/82461234_170526794173206_7622054795494293504_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=qLT1_oXjwd4AX9-ekKM&_nc_ht=scontent.fcgk18-2.fna&oh=1a949e228c756a3eabdb3bba6c178b75&oe=6090CE9C" alt="" class="card__img">
-
-						<div class="card__data">
-							<h3 class="card__title">Fauzul</h3>
-							<span class="card__profession">Front-End Developer</span>
+					<div class="team-card">
+						<img src="" alt="...">
+						<div class="card-data">
+							<h5 class="card-title">Pandu Wilanthara</h5>
+							<p class="card-profession">Full-Stack Dev</p>
 						</div>
 
-						<a href="" class="card__button">Know More</a>
-
-						<div class="card__social">
-							<a href="" class="card__link"><i class='bx bxl-facebook'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-github'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-instagram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-linkedin' ></i></a>
-							<a href="" class="card__link"><i class='bx bxl-telegram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-twitter'></i></a>
-<!--							<a href="" class="card__link"><i class='bx bxl-whatsapp'></i></a>-->
+						<div class="socmed">
+							<a href="" class="nav_link"><i class='bx bxl-facebook'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-github'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-instagram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-linkedin' ></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-telegram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-twitter'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-whatsapp'></i></a>
 						</div>
 					</div>
 					<!--1-->
 
 					<!--2-->
-					<div class="card__glass border ">
-						<img src="https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.6435-9/82461234_170526794173206_7622054795494293504_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=qLT1_oXjwd4AX9-ekKM&_nc_ht=scontent.fcgk18-2.fna&oh=1a949e228c756a3eabdb3bba6c178b75&oe=6090CE9C" alt="" class="card__img">
-
-						<div class="card__data">
-							<h3 class="card__title">Fauzul</h3>
-							<span class="card__profession">Front-End Developer</span>
+					<div class="team-card">
+						<img src="" alt="...">
+						<div class="card-data">
+							<h5 class="card-title">Briyan</h5>
+							<p class="card-profession">Full-Stack Dev</p>
 						</div>
 
-						<a href="" class="card__button">Know More</a>
-
-						<div class="card__social">
-							<a href="" class="card__link"><i class='bx bxl-facebook'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-github'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-instagram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-linkedin' ></i></a>
-							<a href="" class="card__link"><i class='bx bxl-telegram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-twitter'></i></a>
-							<!--							<a href="" class="card__link"><i class='bx bxl-whatsapp'></i></a>-->
+						<div class="socmed">
+							<a href="" class="nav_link"><i class='bx bxl-facebook'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-github'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-instagram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-linkedin' ></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-telegram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-twitter'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-whatsapp'></i></a>
 						</div>
 					</div>
 					<!--2-->
 
 					<!--3-->
-					<div class="card__glass border ">
-						<img src="https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.6435-9/82461234_170526794173206_7622054795494293504_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=qLT1_oXjwd4AX9-ekKM&_nc_ht=scontent.fcgk18-2.fna&oh=1a949e228c756a3eabdb3bba6c178b75&oe=6090CE9C" alt="" class="card__img">
-
-						<div class="card__data">
-							<h3 class="card__title">Fauzul</h3>
-							<span class="card__profession">Front-End Developer</span>
+					<div class="team-card">
+						<img src="" alt="...">
+						<div class="card-data">
+							<h5 class="card-title">Angga Prasetya Wibawa</h5>
+							<p class="card-profession">Full-Stack Dev</p>
 						</div>
 
-						<a href="" class="card__button">Know More</a>
-
-						<div class="card__social">
-							<a href="" class="card__link"><i class='bx bxl-facebook'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-github'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-instagram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-linkedin' ></i></a>
-							<a href="" class="card__link"><i class='bx bxl-telegram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-twitter'></i></a>
-							<!--							<a href="" class="card__link"><i class='bx bxl-whatsapp'></i></a>-->
+						<div class="socmed">
+							<a href="" class="nav_link"><i class='bx bxl-facebook'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-github'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-instagram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-linkedin' ></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-telegram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-twitter'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-whatsapp'></i></a>
 						</div>
 					</div>
 					<!--3-->
 
 					<!--4-->
-					<div class="card__glass border ">
-						<img src="https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.6435-9/82461234_170526794173206_7622054795494293504_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=qLT1_oXjwd4AX9-ekKM&_nc_ht=scontent.fcgk18-2.fna&oh=1a949e228c756a3eabdb3bba6c178b75&oe=6090CE9C" alt="" class="card__img">
-
-						<div class="card__data">
-							<h3 class="card__title">Fauzul</h3>
-							<span class="card__profession">Front-End Developer</span>
+					<div class="team-card">
+						<img src="" alt="...">
+						<div class="card-data">
+							<h5 class="card-title">Danang Estutomoaji</h5>
+							<p class="card-profession">Full-Stack Dev</p>
 						</div>
 
-						<a href="" class="card__button">Know More</a>
-
-						<div class="card__social">
-							<a href="" class="card__link"><i class='bx bxl-facebook'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-github'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-instagram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-linkedin' ></i></a>
-							<a href="" class="card__link"><i class='bx bxl-telegram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-twitter'></i></a>
-							<!--							<a href="" class="card__link"><i class='bx bxl-whatsapp'></i></a>-->
+						<div class="socmed">
+							<a href="" class="nav_link"><i class='bx bxl-facebook'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-github'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-instagram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-linkedin' ></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-telegram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-twitter'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-whatsapp'></i></a>
 						</div>
 					</div>
 					<!--4-->
 
 					<!--5-->
-					<div class="card__glass border ">
-						<img src="https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.6435-9/82461234_170526794173206_7622054795494293504_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=qLT1_oXjwd4AX9-ekKM&_nc_ht=scontent.fcgk18-2.fna&oh=1a949e228c756a3eabdb3bba6c178b75&oe=6090CE9C" alt="" class="card__img">
-
-						<div class="card__data">
-							<h3 class="card__title">Fauzul</h3>
-							<span class="card__profession">Front-End Developer</span>
+					<div class="team-card">
+						<img src="https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.6435-9/82461234_170526794173206_7622054795494293504_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=EPqqIa9ByVwAX_bkj0j&_nc_ht=scontent.fcgk18-2.fna&oh=15a6aee86ceaf598f96d7f11911412f7&oe=6090CE9C" alt="...">
+						<div class="card-data">
+							<h5 class="card-title">Muhammad Fauzul Hanif</h5>
+							<p class="card-profession">Full-Stack Dev</p>
 						</div>
 
-						<a href="" class="card__button">Know More</a>
-
-						<div class="card__social">
-							<a href="" class="card__link"><i class='bx bxl-facebook'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-github'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-instagram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-linkedin' ></i></a>
-							<a href="" class="card__link"><i class='bx bxl-telegram'></i></a>
-							<a href="" class="card__link"><i class='bx bxl-twitter'></i></a>
-							<!--							<a href="" class="card__link"><i class='bx bxl-whatsapp'></i></a>-->
+						<div class="socmed">
+							<a href="" class="nav_link"><i class='bx bxl-facebook'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-github'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-instagram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-linkedin' ></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-telegram'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-twitter'></i></a>
+							<a href="" class="nav_link"><i class='bx bxl-whatsapp'></i></a>
 						</div>
 					</div>
 					<!--5-->
@@ -256,10 +225,53 @@
 			</section>
 			<!-- ---------- TEAM ---------- -->
 
-
 			<!-- ---------- CONTACT ---------- -->
-			<section id="contact" class="border">
-				<h2>Contact Us</h2>
+			<section id="contact">
+				<h2>Contact Us</h2><hr>
+				<form class="row g-3">
+					<div class="col-md-6">
+						<label for="inputEmail4" class="form-label">Email</label>
+						<input type="email" class="form-control" id="inputEmail4">
+					</div>
+					<div class="col-md-6">
+						<label for="inputPassword4" class="form-label">Password</label>
+						<input type="password" class="form-control" id="inputPassword4">
+					</div>
+					<div class="col-12">
+						<label for="inputAddress" class="form-label">Address</label>
+						<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+					</div>
+					<div class="col-12">
+						<label for="inputAddress2" class="form-label">Address 2</label>
+						<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+					</div>
+					<div class="col-md-6">
+						<label for="inputCity" class="form-label">City</label>
+						<input type="text" class="form-control" id="inputCity">
+					</div>
+					<div class="col-md-4">
+						<label for="inputState" class="form-label">State</label>
+						<select id="inputState" class="form-select">
+							<option selected>Choose...</option>
+							<option>...</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<label for="inputZip" class="form-label">Zip</label>
+						<input type="text" class="form-control" id="inputZip">
+					</div>
+					<div class="col-12">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck">
+							<label class="form-check-label" for="gridCheck">
+								Check me out
+							</label>
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Sign in</button>
+					</div>
+				</form>
 			</section>
 			<!-- ---------- CONTACT ---------- -->
 		</main>
@@ -291,7 +303,7 @@
 						<i class='bx bxs-circle'></i>
 						All Right Reserved
 						<i class='bx bxs-circle'></i>
-						<a href="assets/pages/teams.html">Excho Teams</a>
+						<a href="#team">Excho Teams</a>
 					</p>
 				</div>
 			</nav>
@@ -300,7 +312,7 @@
 
 		<!-- ==================== JS ==================== -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-		<script src="./assets/js/home.js"></script>
+		<script src="assets/js/dish.js"></script>
 		<!-- ==================== JS ==================== -->
 	</body>
 </html>

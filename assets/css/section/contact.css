@@ -1,313 +1,46 @@
-/*!* ======================================== MEDIA QUERY ======================================== *!*/
-/*!* -------------------- x-small -------------------- *!*/
-/*@media screen and (max-width: 575px) {*/
-/*    header .navbar-brand span {*/
-/*        display: none;*/
-/*    }*/
-
-/*    !* ---------- HOME ---------- *!*/
-/*    #home {*/
-/*        margin: .7rem 0 3rem;*/
-/*        flex-direction: column-reverse;*/
-/*    }*/
-
-/*    #home .hero-left-top .slogan {*/
-/*        margin: .3rem 0 0;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top p {*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top button {*/
-/*        margin: 1rem 0 2rem;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 span {*/
-/*        margin-right: .5rem;*/
-/*    }*/
-/*    !* ---------- HOME ---------- *!*/
-
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-/*    #recommendation {*/
-/*        margin: 0 1rem;*/
-/*    }*/
-
-/*    #recommendation h2 {*/
-/*        margin-bottom: 2rem;*/
-/*    }*/
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-
-/*    footer .footer-top {*/
-/*        margin: .5rem 0;*/
-/*    }*/
-
-/*    footer .footer-bottom {*/
-/*        margin: 0;*/
-/*    }*/
-/*}*/
-/*!* -------------------- x-small -------------------- *!*/
-
-
-/*!* -------------------- small -------------------- *!*/
-/*@media screen and (min-width: 576px) and (max-width: 767px) {*/
-/*    !* ---------- HOME ---------- *!*/
-/*    #home {*/
-/*        margin: 1.7rem 0 3rem;*/
-/*        flex-direction: column-reverse;*/
-/*    }*/
-
-/*    #home .hero-left-top .slogan {*/
-/*        margin: .3rem 0 0;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top p {*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top button {*/
-/*        margin: 1rem 0 2rem;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 span {*/
-/*        margin-right: .5rem;*/
-/*    }*/
-/*    !* ---------- HOME ---------- *!*/
-
-/*    !* ---------- RECOMMENDATIN ---------- *!*/
-/*    #recommendation {*/
-/*        margin: 0 1rem;*/
-/*    }*/
-
-/*    #recommendation h2 {*/
-/*        margin-bottom: 2rem;*/
-/*    }*/
-/*    !* ---------- RECOMMENDATIN ---------- *!*/
-
-/*    footer .footer-top {*/
-/*        margin: 1.5rem 0;*/
-/*    }*/
-
-/*    footer .footer-bottom {*/
-/*        margin: 0;*/
-/*    }*/
-/*}*/
-/*!* -------------------- small -------------------- *!*/
-
-
-/*!* -------------------- medium -------------------- *!*/
-/*@media screen and (min-width: 768px) and (max-width: 991px) {*/
-/*    !* ---------- HOME ---------- *!*/
-/*    #home {*/
-/*        margin: 2rem 0 3rem;*/
-/*        flex-direction: column-reverse;*/
-/*    }*/
-
-/*    #home .hero-left-top .slogan {*/
-/*        margin: .3rem 0 0;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top p {*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top button {*/
-/*        margin: 1rem 0 2rem;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 span {*/
-/*        margin-right: .5rem;*/
-/*    }*/
-/*    !* ---------- HOME ---------- *!*/
-
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-/*    #recommendation {*/
-/*        margin: 0 1rem;*/
-/*    }*/
-
-/*    #recommendation h2 {*/
-/*        margin-bottom: 2rem;*/
-/*    }*/
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-
-/*    footer .footer-top {*/
-/*        margin: 1.7rem 0;*/
-/*    }*/
-
-/*    footer .footer-bottom {*/
-/*        margin: 0;*/
-/*    }*/
-/*}*/
-/*!* -------------------- medium -------------------- *!*/
-
-
-/*!* -------------------- large -------------------- *!*/
-/*@media screen and (min-width: 992px) and (max-width: 1199px) {*/
-/*    !* ---------- HOME ---------- *!*/
-/*    #home {*/
-/*        margin: 1.5rem 0 3rem;*/
-/*    }*/
-
-/*    #home .hero-left-top .slogan {*/
-/*        margin: .3rem 0 0;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top p {*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top button {*/
-/*        margin: 1rem 0 2rem;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 span {*/
-/*        margin-right: .5rem;*/
-/*    }*/
-/*    !* ---------- HOME ---------- *!*/
-
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-/*    #recommendation {*/
-/*        margin: 0 1rem;*/
-/*    }*/
-
-/*    #recommendation h2 {*/
-/*        margin: 3rem;*/
-/*    }*/
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-
-/*    footer .footer-top {*/
-/*        margin: 1.5rem 0;*/
-/*    }*/
-
-/*    footer .footer-bottom {*/
-/*        margin: 0;*/
-/*    }*/
-/*}*/
-/*!* -------------------- large -------------------- *!*/
-
-
-/*!* -------------------- extra large -------------------- *!*/
-/*@media screen and (min-width: 1200px) and (max-width: 1399px) {*/
-/*    !* ---------- HOME ---------- *!*/
-/*    #home {*/
-/*        margin: 2.3rem 0 3rem;*/
-/*    }*/
-
-/*    #home .hero-left-top .slogan {*/
-/*        margin: .3rem 0 0;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top p {*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top button {*/
-/*        margin: 1rem 0 2rem;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 span {*/
-/*        margin-right: .5rem;*/
-/*    }*/
-/*    !* ---------- HOME ---------- *!*/
-
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-/*    #recommendation {*/
-/*        margin: 0 1rem;*/
-/*    }*/
-
-/*    #recommendation h2 {*/
-/*        margin-bottom: 3rem;*/
-/*    }*/
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-
-/*    footer .footer-top {*/
-/*        margin: 2rem 0;*/
-/*    }*/
-
-/*    footer .footer-bottom {*/
-/*        margin: 0;*/
-/*    }*/
-/*}*/
-/*!* -------------------- x-large -------------------- *!*/
-
-
-/*!* -------------------- xx-large -------------------- *!*/
-/*@media screen and (min-width: 1400px) {*/
-/*    !* ---------- HOME ---------- *!*/
-/*    #home {*/
-/*        margin: 2.8rem 0 3rem;*/
-/*    }*/
-
-/*    #home .hero-left-top .slogan {*/
-/*        margin: .3rem 0 0;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top p {*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    #home .hero-left-top button {*/
-/*        margin: 1rem 0 2rem;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    #home .hero-left-bottom .info h5 span {*/
-/*        margin-right: .5rem;*/
-/*    }*/
-/*    !* ---------- HOME ---------- *!*/
-
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-/*    #recommendation {*/
-/*        margin: 0 1rem;*/
-/*    }*/
-
-/*    #recommendation h2 {*/
-/*        margin-bottom: 3rem;*/
-/*    }*/
-/*    !* ---------- RECOMMENDATION ---------- *!*/
-
-/*    footer .footer-top {*/
-/*        margin: 2.8rem 0;*/
-/*    }*/
-
-/*    footer .footer-bottom {*/
-/*        margin: 0;*/
-/*    }*/
-/*}*/
-/*!* -------------------- xx-large -------------------- *!*/
-/*!* ======================================== MEDIA QUERY ======================================== *!*/
+#contact {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+#contact h2 {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-weight: bolder;
+}
+
+#contact hr {
+    width: 7rem;
+    border-radius: 100rem;
+    height: .25rem;
+    background-color: #595959;
+}
+
+/* ======================================== MEDIA QUERY ======================================== */
+/* -------------------- x-small -------------------- */
+@media screen and (max-width: 575px) {}
+/* -------------------- x-small -------------------- */
+
+/* -------------------- small -------------------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {}
+/* -------------------- small -------------------- */
+
+/* -------------------- medium -------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+/* -------------------- medium -------------------- */
+
+/* -------------------- large -------------------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+/* -------------------- large -------------------- */
+
+/* -------------------- extra large -------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {}
+/* -------------------- x-large -------------------- */
+
+/* -------------------- xx-large -------------------- */
+@media screen and (min-width: 1400px) {}
+/* -------------------- xx-large -------------------- */
+/* ======================================== MEDIA QUERY ======================================== */
