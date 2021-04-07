@@ -1,0 +1,63 @@
+#about {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+#about h2 {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#about hr {
+    width: 7rem;
+    border-radius: 100rem;
+    height: .25rem;
+    background-color: #595959;
+}
+
+#about p {
+    text-align: center;
+}
+
+/* ======================================== MEDIA QUERY ======================================== */
+/* -------------------- x-small -------------------- */
+@media screen and (max-width: 575px) {}
+/* -------------------- x-small -------------------- */
+
+/* -------------------- small -------------------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {}
+/* -------------------- small -------------------- */
+
+/* -------------------- medium -------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+/* -------------------- medium -------------------- */
+
+/* -------------------- large -------------------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #about p {
+        width: 75%;
+    }
+}
+/* -------------------- large -------------------- */
+
+/* -------------------- extra large -------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    #about p {
+        width: 75%;
+    }
+}
+/* -------------------- x-large -------------------- */
+
+/* -------------------- xx-large -------------------- */
+@media screen and (min-width: 1400px) {
+    #about p {
+        width: 75%;
+    }
+}
+/* -------------------- xx-large -------------------- */
+/* ======================================== MEDIA QUERY ======================================== */
