@@ -1,0 +1,214 @@
+#hero  {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.hero-left,
+.hero-right {
+    width: 100%;
+}
+
+.hero-left-top .slogan {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.hero-left-top p {
+    margin: 1rem 0;
+}
+
+.hero-left-top button {
+    background-color: #ffcd5e;
+    box-shadow: 0 8px 32px 0 rgba(255, 179, 65, 0.37);
+    border: none;
+    padding: 1rem 5rem;
+    border-radius: 100rem;
+    margin: 1rem 0 3rem ;
+}
+
+.hero-left-top button:hover {
+    background-color: #ffb341;
+}
+
+.hero-left-bottom {
+    display: flex;
+}
+
+.hero-left-bottom h5 {
+    font-weight: bolder;
+}
+
+.hero-left-bottom .info {
+    margin-right: 3rem;
+}
+
+.hero-left-bottom .info i {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.hero-left-bottom .info h5 span {
+    color: #ffb341;
+}
+
+.hero-right .carousel-inner {
+    border-radius: 1rem;
+}
+
+.hero-right .carousel-img1,
+.hero-right .carousel-img2,
+.hero-right .carousel-img3 {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-right .carousel-img1 {
+    background-image: url("https://images.unsplash.com/photo-1580683742795-49989f7ecb72?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80");
+}
+
+.hero-right .carousel-img2 {
+    background-image: url("https://images.unsplash.com/photo-1541921671-016ccc70f7cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1343&q=80");
+}
+
+.hero-right .carousel-img3 {
+    background-image: url("https://images.unsplash.com/photo-1576488489579-6967c02c56fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+
+.hero-right .carousel-indicators button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+}
+
+/* ======================================== MEDIA QUERY ======================================== */
+/* -------------------- xx-small -------------------- */
+@media screen and (max-width: 500px) {
+    #hero {
+        margin-top: .7rem;
+        flex-direction: column-reverse;
+    }
+}
+/* -------------------- xx-small -------------------- */
+
+/* -------------------- x-small -------------------- */
+@media screen and (min-width: 501px) and (max-width: 575px) {
+    #hero {
+        margin-top: .7rem;
+        flex-direction: column-reverse;
+    }
+
+    .hero-left-top .slogan {
+        margin: 1rem 0;
+    }
+
+    .hero-left-bottom .info h5 {
+        display: flex;
+    }
+
+    .hero-left-bottom .info h5 span {
+        margin-right: .5rem;
+    }
+}
+/* -------------------- x-small -------------------- */
+
+/* -------------------- small -------------------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    #hero {
+        margin-top: 1.7rem;
+        flex-direction: column-reverse;
+    }
+
+    .hero-left-top .slogan {
+        margin: 1rem 0;
+    }
+
+    .hero-left-bottom .info h5 {
+        display: flex;
+    }
+
+    .hero-left-bottom .info h5 span {
+        margin-right: .5rem;
+    }
+}
+/* -------------------- small -------------------- */
+
+/* -------------------- medium -------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #hero {
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .hero-left-top .slogan {
+        margin: 1rem 0;
+    }
+
+    .hero-left-bottom .info h5 span {
+        margin-right: .5rem;
+    }
+}
+/* -------------------- medium -------------------- */
+
+/* -------------------- large -------------------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #hero {
+        margin-top: 1.5rem;
+    }
+
+    .hero-left-top .slogan {
+        margin-top: 0;
+    }
+
+    .hero-left-bottom .info h5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-left-bottom .info h5 span {
+        margin-right: .5rem;
+    }
+}
+/* -------------------- large -------------------- */
+
+/* -------------------- extra large -------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    #hero {
+        margin-top: 2.3rem;
+    }
+
+    .hero-left-top .slogan {
+        margin-top: 0;
+    }
+
+    .hero-left-bottom .info h5 {
+        display: flex;
+    }
+
+    .hero-left-bottom .info h5 span {
+        margin-right: .5rem;
+    }
+}
+/* -------------------- x-large -------------------- */
+
+/* -------------------- xx-large -------------------- */
+@media screen and (min-width: 1400px) {
+    #hero {
+        margin-top: 2.8rem;
+    }
+
+    .hero-left-top .slogan {
+        margin-top: 0;
+    }
+
+    .hero-left-bottom .info h5 {
+        display: flex;
+    }
+
+    .hero-left-bottom .info h5 span {
+        margin-right: .5rem;
+    }
+}
+/* -------------------- xx-large -------------------- */
+/* ======================================== MEDIA QUERY ======================================== */

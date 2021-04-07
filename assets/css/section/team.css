@@ -1,0 +1,124 @@
+#team {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+#team h2 {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#team hr {
+    width: 7rem;
+    border-radius: 100rem;
+    height: .25rem;
+    background-color: #595959;
+}
+
+#team-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+}
+
+#team-item .team-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    height: 21.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-item .team-card:hover .nav_link {
+    transform: translateX(-1.5rem);
+}
+
+#team-item .team-card img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#team-item .card-data {
+    margin-bottom: 1.5rem;
+}
+
+#team-item .socmed {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%);
+}
+
+#team-item .socmed .nav_link {
+    display: block;
+    font-size: 1.35rem;
+    margin: 1rem 0;
+    transform: translateX(-10rem);
+}
+
+#team-item .socmed .nav_link:nth-child(1) {
+    transition: .2s;
+}
+
+#team-item .socmed .nav_link:nth-child(2) {
+    transition: .5s;
+}
+
+#team-item .socmed .nav_link:nth-child(3) {
+    transition: .7s;
+}
+
+#team-item .socmed .nav_link:nth-child(4) {
+    transition: .9s;
+}
+
+#team-item .socmed .nav_link:nth-child(5) {
+    transition: 1.1s;
+}
+
+#team-item .socmed .nav_link:nth-child(6) {
+    transition: 1.3s;
+}
+
+#team-item .socmed .nav_link:nth-child(7) {
+    transition: 1.5s;
+}
+
+/* ======================================== MEDIA QUERY ======================================== */
+/* -------------------- x-small -------------------- */
+@media screen and (max-width: 575px) {}
+/* -------------------- x-small -------------------- */
+
+/* -------------------- small -------------------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {}
+/* -------------------- small -------------------- */
+
+/* -------------------- medium -------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+/* -------------------- medium -------------------- */
+
+/* -------------------- large -------------------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+/* -------------------- large -------------------- */
+
+/* -------------------- extra large -------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {}
+/* -------------------- x-large -------------------- */
+
+/* -------------------- xx-large -------------------- */
+@media screen and (min-width: 1400px) {}
+/* -------------------- xx-large -------------------- */
+/* ======================================== MEDIA QUERY ======================================== */

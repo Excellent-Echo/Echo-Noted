@@ -1,159 +1,525 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-		<link rel="stylesheet" href="./assets/css/styles.css">
-		<link rel="icon" href="./assets/img/excho-restaurant.png">
-		<title>Excho Restaurant</title>
-	</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <body>
-		<!-- ==================== HEADER ==================== -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="icon" href="./assets/img/excho-restaurant.png" />
+        <title>Excho Restaurant - Find A Dish Suit One's Taste</title>
+    </head>
+
+    <body id="home">
+        <!-- ==================== HEADER ==================== -->
         <header class="sticky-top">
-			<!-- ---------- NAVBAR ---------- -->
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<a class="navbar-brand" href="./index.html">
-						<img src="./assets/img/excho-restaurant.png" alt="" width="30" class="d-inline-block align-text-top">
-						<span>Excho Restaurant</span>
-					</a>
-			
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+            <!-- ---------- NAVBAR ---------- -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#home">
+                        <img
+                            src="./assets/img/excho-restaurant.png"
+                            alt=""
+                            width="30"
+                            class="d-inline-block align-text-top"
+                        />
+                        <span>Excho Restaurant</span>
+                    </a>
 
-					<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-						<ul class="navbar-nav">
-							<li><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
-							<li class="nav-item dropdown">
-								<a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Dish by Country <i class='bx bxs-chevron-down'></i>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="./assets/pages/category/chinese/chinese.html">Chinese</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/indian/indian.html">Indian</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/italian/italian.html">Italian</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/japanese/japanese.html">Japanese</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/korean/korean.html">Korean</a></li>
-									<li><a class="dropdown-item" href="./assets/pages/category/middle-east/middle-east.html">Middle East</a></li>
-								</ul>
-							</li>
-							<li><a class="nav-link" href="assets/pages/about.html">About</a></li>
-							<li><a class="nav-link" href="assets/pages/">Teams</a></li>
-							<li><a class="nav-link" href="./assets/pages/">Contact</a></li>
-							<li><a class="nav-link" href="./assets/pages/wishlist/index.html"><i class='bx bxs-heart'></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-			<!-- ---------- NAVBAR ---------- -->
-		</header>
-		<!-- ==================== HEADER ==================== -->
-		
-		<!-- ==================== MAIN ==================== -->
-		<main class="container">
-			<!-- ---------- HERO ---------- -->
-			<section class="hero">
-				<!-- ---------- INFO ---------- -->
-				<div class="hero-left">
-					<div class="hero-left-top">
-						<h1 class="slogan">Find A Dish <br> Suit One's Taste</h1>
-						<p>Provides a variety of menu dishes from <br> various countries,
-							complete with recipes, <br> how to make and others.
-						</p>
-						<button type="button">Show Me Now</button>
-					</div>
-					<div class="hero-left-bottom">
-						<div class="info">
-							<i class='bx bx-dish'></i>
-							<h5><span>100+</span> dishs</h5>
-						</div>
-						<div class="info">
-							<i class='bx bx-food-menu'></i>
-							<h5><span>100+</span> recipes</h5>
-						</div>
-						<div class="info">
-							<i class='bx bx-fridge'></i>
-							<h5><span>100+</span> ingredients</h5>
-						</div>
-					</div>
-				</div>
-				<!-- ---------- INFO ---------- -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-				<!-- ---------- CAROUSEL ---------- -->
-				<div class="hero-right">
-					<div class="frame">
-						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-							<div class="carousel-indicators">
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-							</div>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<div class="d-block w-100 carousel-img1"></div>
-									<!-- <img src="https://images.unsplash.com/photo-1542197745-c70e10f66af8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" class="d-block w-100" alt="..."> -->
-								</div>
-								<div class="carousel-item">
-									<div class="d-block w-100 carousel-img2"></div>
-									<!-- <img src="https://images.unsplash.com/photo-1542197745-c70e10f66af8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" class="d-block w-100" alt="..."> -->
-								</div>
-								<div class="carousel-item">
-									<div class="d-block w-100 carousel-img3"></div>
-									<!-- <img src="https://images.unsplash.com/photo-1542197745-c70e10f66af8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" class="d-block w-100" alt="..."> -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- ---------- CAROUSEL ---------- -->
-			</section>
-			<!-- ---------- HERO ---------- -->
+                    <div
+                        class="collapse navbar-collapse justify-content-end"
+                        id="navbarNavAltMarkup"
+                    >
+                        <ul class="navbar-nav">
+                            <li>
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#home"
+                                    >Home</a
+                                >
+                            </li>
+                            <li><a class="nav-link" href="#dish">Dish</a></li>
+                            <li><a class="nav-link" href="#about">About</a></li>
+                            <li><a class="nav-link" href="#team">Teams</a></li>
+                            <li>
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    href="./assets/pages/wishlist/index.html"
+                                    ><i class="bx bxs-heart"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- ---------- NAVBAR ---------- -->
+        </header>
+        <!-- ==================== HEADER ==================== -->
 
-			<!-- ---------- RECOMMENDATION DISH ---------- -->
-			<section class="recommendation">
-				<h2 class="text-center">Recommendation Dish</h2>
-				<div class="justify-content-center row row-cols-4" id="recommendation"></div>
-			</section>
-			<!-- ---------- RECOMMENDATION DISH ---------- -->
-		</main>
-		<!-- ==================== MAIN ==================== -->
+        <!-- ==================== MAIN ==================== -->
+        <main class="container">
+            <!-- ---------- HERO ---------- -->
+            <section id="hero">
+                <!-- ---------- INFO ---------- -->
+                <div class="hero-left">
+                    <div class="hero-left-top">
+                        <h1 class="slogan">
+                            Find A Dish <br />
+                            Suit One's Taste
+                        </h1>
+                        <p>
+                            Provides a variety of menu dishes from <br />
+                            various countries, complete with recipes, <br />
+                            how to make and others.
+                        </p>
+                        <button type="button">Show Me Now</button>
+                    </div>
+                    <div class="hero-left-bottom">
+                        <div class="info">
+                            <i class="bx bx-dish"></i>
+                            <h5><span>100+</span> dishs</h5>
+                        </div>
+                        <div class="info">
+                            <i class="bx bx-food-menu"></i>
+                            <h5><span>100+</span> recipes</h5>
+                        </div>
+                        <div class="info">
+                            <i class="bx bx-fridge"></i>
+                            <h5><span>100+</span> ingredients</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------- INFO ---------- -->
 
-		<!-- ==================== FOOTER ==================== -->
-		<footer class="justify-content-center">
-			<nav class="container">
-				<div class="footer-top">
-					<div class="footer-top-1">
-						<h3>Excho Restaurant</h3>
-						<p>Find A Dish <br> Suit One's Taste</p>
-					</div>
-					<div class="footer-top-2">
-						<h5>Contact Us</h5>
-						<h6>support@excho.com</h6>
-						<h6>012 - 3456 - 7890</h6>
-						<h6>Indonesia</h6>
-					</div>
-				</div>
-				<div class="footer-bottom text-center">
-					<p>&copy 2021
-						<i class='bx bxs-circle'></i>
-						All Right Reserved
-						<i class='bx bxs-circle'></i>
-						Excho Restaurant
-					</p>
-				</div>
-			</nav>
-		</footer>
-		<!-- ==================== FOOTER ==================== -->
+                <!-- ---------- CAROUSEL ---------- -->
+                <div class="hero-right">
+                    <div
+                        id="carouselExampleIndicators"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                    >
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-block w-100 carousel-img1"></div>
+                                <!--								 <img src="https://images.unsplash.com/photo-1542197745-c70e10f66af8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" class="d-block w-100" alt="...">-->
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-block w-100 carousel-img2"></div>
+                                <!--								 <img src="https://images.unsplash.com/photo-1542197745-c70e10f66af8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" class="d-block w-100" alt="...">-->
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-block w-100 carousel-img3"></div>
+                                <!--								 <img src="https://images.unsplash.com/photo-1542197745-c70e10f66af8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" class="d-block w-100" alt="...">-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------- CAROUSEL ---------- -->
+            </section>
+            <!-- ---------- HERO ---------- -->
 
-		<!-- ==================== JS ==================== -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-		<script src="./assets/js/script.js"></script>
-		<!-- ==================== JS ==================== -->
-	</body>
+            <!-- ---------- DISH ---------- -->
+            <section id="dish">
+                <h2>Dish</h2>
+                <hr />
+                <div class="justify-content-center" id="dish-item"></div>
+                <button onclick="">More Dish</button>
+            </section>
+            <!-- ---------- DISH ---------- -->
+
+            <!-- ---------- ABOUT ---------- -->
+            <section id="about">
+                <h2>About</h2>
+                <hr />
+                <p>
+                    Excho Restaurant is a website that provides a variety of
+                    dishes with 5 star flavors that you can choose according to
+                    your own taste. Not only the dishes, but that you can see
+                    the ingredients for the ingredients, the prices, the cooking
+                    methods, etc. <br /><br />
+                    This site is only a student project that uses the Public
+                    API, and apologize for any shortcomings.
+                </p>
+            </section>
+            <!-- ---------- ABOUT ---------- -->
+
+            <!-- ---------- TEAM ---------- -->
+            <section id="team">
+                <h2>Our Teams</h2>
+                <hr />
+                <div class="justify-content-center" id="team-item">
+                    <!--1-->
+                    <div class="team-card">
+                        <img src="" alt="..." />
+                        <div class="card-data">
+                            <h5 class="card-title">Pandu Wilanthara</h5>
+                            <p class="card-profession">Full-Stack Dev</p>
+                        </div>
+
+                        <div class="socmed">
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-facebook"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-github"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-instagram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-linkedin"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-telegram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-twitter"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-whatsapp"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <!--1-->
+
+                    <!--2-->
+                    <div class="team-card">
+                        <img src="" alt="..." />
+                        <div class="card-data">
+                            <h5 class="card-title">Briyan</h5>
+                            <p class="card-profession">Full-Stack Dev</p>
+                        </div>
+
+                        <div class="socmed">
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-facebook"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-github"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-instagram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-linkedin"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-telegram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-twitter"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-whatsapp"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <!--2-->
+
+                    <!--3-->
+                    <div class="team-card">
+                        <img src="" alt="..." />
+                        <div class="card-data">
+                            <h5 class="card-title">Angga Prasetya Wibawa</h5>
+                            <p class="card-profession">Full-Stack Dev</p>
+                        </div>
+
+                        <div class="socmed">
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-facebook"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-github"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-instagram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-linkedin"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-telegram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-twitter"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-whatsapp"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <!--3-->
+
+                    <!--4-->
+                    <div class="team-card">
+                        <img src="" alt="..." />
+                        <div class="card-data">
+                            <h5 class="card-title">Danang Estutomoaji</h5>
+                            <p class="card-profession">Full-Stack Dev</p>
+                        </div>
+
+                        <div class="socmed">
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-facebook"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-github"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-instagram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-linkedin"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-telegram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-twitter"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-whatsapp"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <!--4-->
+
+                    <!--5-->
+                    <div class="team-card">
+                        <img
+                            src="https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.6435-9/82461234_170526794173206_7622054795494293504_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=EPqqIa9ByVwAX_bkj0j&_nc_ht=scontent.fcgk18-2.fna&oh=15a6aee86ceaf598f96d7f11911412f7&oe=6090CE9C"
+                            alt="..."
+                        />
+                        <div class="card-data">
+                            <h5 class="card-title">Muhammad Fauzul Hanif</h5>
+                            <p class="card-profession">Full-Stack Dev</p>
+                        </div>
+
+                        <div class="socmed">
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-facebook"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-github"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-instagram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-linkedin"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-telegram"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-twitter"></i
+                            ></a>
+                            <a href="" class="nav_link"
+                                ><i class="bx bxl-whatsapp"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <!--5-->
+                </div>
+            </section>
+            <!-- ---------- TEAM ---------- -->
+
+            <!-- ---------- CONTACT ---------- -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <hr />
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label"
+                            >Email</label
+                        >
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail4"
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label"
+                            >Password</label
+                        >
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="inputPassword4"
+                        />
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label"
+                            >Address</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputAddress"
+                            placeholder="1234 Main St"
+                        />
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label"
+                            >Address 2</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputAddress2"
+                            placeholder="Apartment, studio, or floor"
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputCity"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" />
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="gridCheck"
+                            />
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                            Sign in
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <!-- ---------- CONTACT ---------- -->
+        </main>
+        <!-- ==================== MAIN ==================== -->
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="justify-content-center">
+            <nav class="container">
+                <div class="footer-top">
+                    <div class="footer-top-1">
+                        <h3>Excho Restaurant</h3>
+                        <p>
+                            Find A Dish <br />
+                            Suit One's Taste
+                        </p>
+                    </div>
+                    <div class="footer-top-2">
+                        <h5>Excellent Echo Project</h5>
+                        <h6>
+                            <a href="https://impact-sport.netlify.app"
+                                >Impact Sport</a
+                            >
+                        </h6>
+                        <h6>
+                            <a href="https://echo-noted.netlify.app"
+                                >Excho Restaurant</a
+                            >
+                        </h6>
+                        <h6>
+                            <a href="https://exo-travel.netlify.app"
+                                >Exo Trans</a
+                            >
+                        </h6>
+                    </div>
+                    <div class="footer-top-3">
+                        <h5>Connect Us</h5>
+                        <h6>support@excho.com</h6>
+                        <h6>012 - 3456 - 7890</h6>
+                        <h6>Indonesia</h6>
+                    </div>
+                </div>
+                <div class="footer-bottom text-center">
+                    <p>
+                        &copy 2021
+                        <i class="bx bxs-circle"></i>
+                        All Right Reserved
+                        <i class="bx bxs-circle"></i>
+                        <a href="#team">Excho Teams</a>
+                    </p>
+                </div>
+            </nav>
+        </footer>
+        <!-- ==================== FOOTER ==================== -->
+
+        <!-- ==================== JS ==================== -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/dish.js"></script>
+        <!-- ==================== JS ==================== -->
+    </body>
 </html>
