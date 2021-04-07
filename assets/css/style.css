@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import "section/header.css";
+@import "section/hero.css";
+@import "section/about.css";
+@import "section/dish.css";
+@import "section/team.css";
+@import "section/contact.css";
+@import "section/footer.css";
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: #0d0d0d;
+}
+
+* a {
+    text-decoration: none;
+}
