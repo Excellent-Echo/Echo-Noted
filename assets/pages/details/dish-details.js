@@ -1,9 +1,11 @@
 const apiKey = [
-  "80e73835c8934c0a8f67600904977073",
-  "83f2261f53d549ad8d8451ba2ebde399",
-  "10baa3c3fcac490ab89f070dd6a19ba9",
+    "80e73835c8934c0a8f67600904977073",
+    "83f2261f53d549ad8d8451ba2ebde399",
+    "10baa3c3fcac490ab89f070dd6a19ba9",
+    "d624b4c0731e4398904c190db5bb6783",
+    "1c0f1e0838ad44e8aaccbd48b5375f7b",
+    "337cb9cb85fa416bbdf29e69ef8d39d9",
 ];
-// const apiKey = ["d624b4c0731e4398904c190db5bb6783", "1c0f1e0838ad44e8aaccbd48b5375f7b","337cb9cb85fa416bbdf29e69ef8d39d9"]
 const random = Math.floor(Math.random() * apiKey.length);
 const randomAPIKey = apiKey[random];
 
@@ -11,28 +13,28 @@ const dishID = localStorage.getItem("dishID");
 const url = localStorage.getItem("url");
 
 const fetchApi = (id) => {
-  const detailSection = document.getElementById("details-section");
-  const dishBreadcumb = document.getElementById("dish-breadcumb");
-  const dishMenu = document.getElementById("menu");
+    const detailSection = document.getElementById("details-section");
+    const dishBreadcumb = document.getElementById("dish-breadcumb");
+    const dishMenu = document.getElementById("menu");
 
-  const endPoint = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${randomAPIKey}&includeNutrition=false`;
+    const endPoint = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${randomAPIKey}&includeNutrition=true`;
 
-  fetch(endPoint)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      let content = `
+    fetch(endPoint)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            let content = `
 			<div>
 
 			<div class="row">
 				<div class="col-md-5">
 					<div class="row">
-						<h3 class="summary">Soto Betawi</h3>
+						<h3 class="summary">${data.title}</h3>
 					</div>
 
 					<div class="row">
 						<div class="box-image">
-							<img src="https://i.ibb.co/n7j1f9C/121267029-898785447318816-147767993758142809-n-width-800.jpg" width="100%" alt="gambar makanan" />
+							<img src="${data.image}" width="100%" alt="gambar makanan" />
 						</div>
 					</div>
 
@@ -155,62 +157,73 @@ const fetchApi = (id) => {
 
 			</div>
 		`;
-      dishBreadcumb.innerHTML = data.title;
-      detailSection.innerHTML = content;
+            dishBreadcumb.innerHTML = data.title;
+            detailSection.innerHTML = content;
 
-      let menuLink = document.createElement("a");
-      let linkText = "";
+            let menuLink = document.createElement("a");
+            let linkText = "";
 
-      if (url == "http://127.0.0.1:5500/assets/category/korean/korean.html") {
-        linkText = document.createTextNode("Korean Dish");
-        menuLink.appendChild(linkText);
-      } else if (
-        url == "http://127.0.0.1:5500/assets/category/chinese/chinese.html"
-      ) {
-        linkText = document.createTextNode("Chinese Dish");
-        menuLink.appendChild(linkText);
-      } else if (
-        url == "http://127.0.0.1:5500/assets/category/indian/indian.html"
-      ) {
-        linkText = document.createTextNode("Indian Dish");
-        menuLink.appendChild(linkText);
-      } else if (
-        url == "http://127.0.0.1:5500/assets/category/italian/italian.html"
-      ) {
-        linkText = document.createTextNode("Italian Dish");
-        menuLink.appendChild(linkText);
-      } else if (
-        url == "http://127.0.0.1:5500/assets/category/japanese/japanese.html"
-      ) {
-        linkText = document.createTextNode("Japanese Dish");
-        menuLink.appendChild(linkText);
-      } else {
-        linkText = document.createTextNode("Middle Eastern Dish");
-        menuLink.appendChild(linkText);
-      }
+            if (
+                url ==
+                "http://127.0.0.1:5500/assets/category/korean/korean.html"
+            ) {
+                linkText = document.createTextNode("Korean Dish");
+                menuLink.appendChild(linkText);
+            } else if (
+                url ==
+                "http://127.0.0.1:5500/assets/category/chinese/chinese.html"
+            ) {
+                linkText = document.createTextNode("Chinese Dish");
+                menuLink.appendChild(linkText);
+            } else if (
+                url ==
+                "http://127.0.0.1:5500/assets/category/indian/indian.html"
+            ) {
+                linkText = document.createTextNode("Indian Dish");
+                menuLink.appendChild(linkText);
+            } else if (
+                url ==
+                "http://127.0.0.1:5500/assets/category/italian/italian.html"
+            ) {
+                linkText = document.createTextNode("Italian Dish");
+                menuLink.appendChild(linkText);
+            } else if (
+                url ==
+                "http://127.0.0.1:5500/assets/category/japanese/japanese.html"
+            ) {
+                linkText = document.createTextNode("Japanese Dish");
+                menuLink.appendChild(linkText);
+            } else {
+                linkText = document.createTextNode("Middle Eastern Dish");
+                menuLink.appendChild(linkText);
+            }
 
-      menuLink.href = url;
-      dishMenu.appendChild(menuLink);
-    });
+            menuLink.href = url;
+            dishMenu.appendChild(menuLink);
+        });
 };
 fetchApi(dishID);
 
 const getByID = (event, id) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  const endPoint = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${randomAPIKey}&includeNutrition=false`;
+    const endPoint = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${randomAPIKey}&includeNutrition=false`;
 
-  fetch(endPoint)
-    .then((response) => response.json())
-    .then((data) => {
-      let wishlistData = {
-        id: dishID,
-        title: data.title,
-        image: data.image,
-      };
+    fetch(endPoint)
+        .then((response) => response.json())
+        .then((data) => {
+            let wishlistData = {
+                id: dishID,
+                title: data.title,
+                image: data.image,
+            };
 
-      localStorage.setItem("", JSON.stringify(wishlistData));
+            localStorage.setItem("", JSON.stringify(wishlistData));
 
-      Swal.fire("Good job!", "Menambahkan makanan ke dalam cart!", "success");
-    });
+            Swal.fire(
+                "Good job!",
+                "Menambahkan makanan ke dalam cart!",
+                "success"
+            );
+        });
 };

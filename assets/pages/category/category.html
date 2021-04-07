@@ -19,8 +19,12 @@
                 href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
                 rel="stylesheet"
             />
-            <link rel="stylesheet" href="/assets/css/styles.css" />
-            <link rel="icon" href="./assets/img/excho-restaurant.png" />
+            <link rel="stylesheet" href="/assets/css/style.css" />
+            <link
+                rel="stylesheet"
+                href="../../../node_modules/pure-css-loader/dist/css-loader.css"
+            />
+            <link rel="icon" href="/assets/img/excho-restaurant.png" />
             <title>Excho Restaurant</title>
         </head>
     </head>
@@ -30,9 +34,9 @@
             <!-- ---------- NAVBAR ---------- -->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <a class="navbar-brand" href="./index.html">
+                    <a class="navbar-brand" href="/index.html">
                         <img
-                            src="./assets/img/excho-restaurant.png"
+                            src="/assets/img/excho-restaurant.png"
                             alt=""
                             width="30"
                             class="d-inline-block align-text-top"
@@ -61,32 +65,23 @@
                                 <a
                                     class="nav-link active"
                                     aria-current="page"
-                                    href="./index.html"
+                                    href="/index.html"
                                     >Home</a
                                 >
                             </li>
+                            <li><a class="nav-link" href="#">Dish</a></li>
                             <li>
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="./index.html"
-                                    >Home</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="nav-link"
-                                    href="assets/pages/about.html"
+                                <a class="nav-link" href="/index.html#about"
                                     >About</a
                                 >
                             </li>
                             <li>
-                                <a class="nav-link" href="assets/pages/"
+                                <a class="nav-link" href="/index.html#team"
                                     >Teams</a
                                 >
                             </li>
                             <li>
-                                <a class="nav-link" href="./assets/pages/"
+                                <a class="nav-link" href="/index.html#contact"
                                     >Contact</a
                                 >
                             </li>
@@ -105,7 +100,152 @@
         </header>
         <!-- ==================== HEADER ==================== -->
 
-        <div id="foodList"></div>
+        <div class="loader loader-default"></div>
+
+        <div class="container mt-3 mb-3">
+            <div class="d-flex align-items-start">
+                <div
+                    class="nav flex-column nav-pills me-3"
+                    id="v-pills-tab"
+                    role="tablist"
+                    aria-orientation="vertical"
+                >
+                    <button
+                        class="nav-link active"
+                        id="v-pills-chinese-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-chinese"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-chinese"
+                        aria-selected="true"
+                        onclick="fetchChinese()"
+                    >
+                        Chinese
+                    </button>
+                    <button
+                        class="nav-link"
+                        id="v-pills-indian-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-indian"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-indian"
+                        aria-selected="false"
+                        onclick="fetchIndian()"
+                    >
+                        Indian
+                    </button>
+                    <button
+                        class="nav-link"
+                        id="v-pills-italian-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-italian"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-italian"
+                        aria-selected="false"
+                        onclick="fetchItalian()"
+                    >
+                        Italian
+                    </button>
+                    <button
+                        class="nav-link"
+                        id="v-pills-japanese-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-japanese"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-japanese"
+                        aria-selected="false"
+                        onclick="fetchJapanese()"
+                    >
+                        Japanese
+                    </button>
+                    <button
+                        class="nav-link"
+                        id="v-pills-korean-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-pills-korean"
+                        type="button"
+                        role="tab"
+                        aria-controls="v-pills-korean"
+                        aria-selected="false"
+                        onclick="fetchKorean()"
+                    >
+                        Korean
+                    </button>
+                </div>
+
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div
+                        class="tab-pane fade show active"
+                        id="v-pills-chinese"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-chinese-tab"
+                    >
+                        <div class="container">
+                            <div
+                                id="chinese-dish"
+                                class="d-flex flex-wrap justify-content-between"
+                            ></div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="v-pills-indian"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-indian-tab"
+                    >
+                        <div class="container">
+                            <div
+                                id="indian-dish"
+                                class="d-flex flex-wrap justify-content-between"
+                            ></div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="v-pills-italian"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-italian-tab"
+                    >
+                        <div class="container">
+                            <div
+                                id="italian-dish"
+                                class="d-flex flex-wrap justify-content-between"
+                            ></div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="v-pills-japanese"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-japanese-tab"
+                    >
+                        <div class="container">
+                            <div
+                                id="japanese-dish"
+                                class="d-flex flex-wrap justify-content-between"
+                            ></div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="v-pills-korean"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-korean-tab"
+                    >
+                        <div class="container">
+                            <div
+                                id="korean-dish"
+                                class="d-flex flex-wrap justify-content-between"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- ==================== FOOTER ==================== -->
         <footer class="justify-content-center">
@@ -119,7 +259,25 @@
                         </p>
                     </div>
                     <div class="footer-top-2">
-                        <h5>Contact Us</h5>
+                        <h5>Excellent Echo Project</h5>
+                        <h6>
+                            <a href="https://impact-sport.netlify.app"
+                                >Impact Sport</a
+                            >
+                        </h6>
+                        <h6>
+                            <a href="https://echo-noted.netlify.app"
+                                >Excho Restaurant</a
+                            >
+                        </h6>
+                        <h6>
+                            <a href="https://exo-travel.netlify.app"
+                                >Exo Trans</a
+                            >
+                        </h6>
+                    </div>
+                    <div class="footer-top-3">
+                        <h5>Connect Us</h5>
                         <h6>support@excho.com</h6>
                         <h6>012 - 3456 - 7890</h6>
                         <h6>Indonesia</h6>
@@ -131,7 +289,7 @@
                         <i class="bx bxs-circle"></i>
                         All Right Reserved
                         <i class="bx bxs-circle"></i>
-                        Excho Restaurant
+                        <a href="#team">Excho Teams</a>
                     </p>
                 </div>
             </nav>

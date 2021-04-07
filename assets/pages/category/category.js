@@ -8,43 +8,164 @@ const apiKey = [
 ];
 const random = Math.floor(Math.random() * apiKey.length);
 const randomAPIKey = apiKey[random];
-const endPoint = `https://api.spoonacular.com/recipes/random?cuisine=chinese&number=100&apiKey=${randomAPIKey}`;
-const foodList = document.getElementById("foodList");
-const fetchApi = (_) => {
-    fetch(endPoint)
+// const endPoint = `https://api.spoonacular.com/recipes/random?cuisine=chinese&number=8&apiKey=${randomAPIKey}`;
+const chineseDish = document.getElementById("chinese-dish");
+const indianDish = document.getElementById("indian-dish");
+const italianDish = document.getElementById("italian-dish");
+const japaneseDish = document.getElementById("japanese-dish");
+const koreanDish = document.getElementById("korean-dish");
+
+const fetchChinese = () => {
+    let loader = `<div class="loader loader-default is-active" data-text></div>`;
+    chineseDish.innerHTML = loader;
+    fetch(
+        `https://api.spoonacular.com/recipes/complexSearch?cuisine=chinese&number=8&apiKey=${randomAPIKey}`
+    )
         .then((response) => response.json())
         .then((data) => {
             let content = "";
-            let contentData = data.recipes.forEach((element) => {
-                content += `<div class="card" 
+            let contentData = data.results.forEach((element) => {
+                content += `<div class="card mb-3" 
                                  onclick="detail(event, ${element.id})"
-                                 style="width: 15rem">
+                                 style="width: 13rem; padding: 0.5rem">
                                 <img src="${element.image}" 
                                      onerror="this.onerror=null; this.src='assets/img/image-not-available.jpg'"  
                                      alt="${element.title}" 
                                      class="card-img-top" >
                                 <div class="card-body">
-                                    <h5 class="card-title">${element.title}</h5>
+                                    <h6 class="card-title">${element.title}</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
             `;
             });
-            foodList.innerHTML = content;
+            chineseDish.innerHTML = content;
             return contentData;
         });
 };
-fetchApi();
+
+const fetchIndian = () => {
+    let loader = `<div class="loader loader-default is-active" data-text></div>`;
+    indianDish.innerHTML = loader;
+    fetch(
+        `https://api.spoonacular.com/recipes/complexSearch?cuisine=indian&number=8&apiKey=${randomAPIKey}`
+    )
+        .then((response) => response.json())
+        .then((data) => {
+            let content = "";
+            let contentData = data.results.forEach((element) => {
+                content += `<div class="card mb-3" 
+                                 onclick="detail(event, ${element.id})"
+                                 style="width: 13rem; padding: 0.5rem">
+                                <img src="${element.image}" 
+                                     onerror="this.onerror=null; this.src='assets/img/image-not-available.jpg'"  
+                                     alt="${element.title}" 
+                                     class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">${element.title}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            `;
+            });
+            indianDish.innerHTML = content;
+            return contentData;
+        });
+};
+
+const fetchItalian = () => {
+    let loader = `<div class="loader loader-default is-active" data-text></div>`;
+    italianDish.innerHTML = loader;
+    fetch(
+        `https://api.spoonacular.com/recipes/complexSearch?cuisine=italian&number=8&apiKey=${randomAPIKey}`
+    )
+        .then((response) => response.json())
+        .then((data) => {
+            let content = "";
+            let contentData = data.results.forEach((element) => {
+                content += `<div class="card mb-3" 
+                                 onclick="detail(event, ${element.id})"
+                                 style="width: 13rem; padding: 0.5rem">
+                                <img src="${element.image}" 
+                                     onerror="this.onerror=null; this.src='assets/img/image-not-available.jpg'"  
+                                     alt="${element.title}" 
+                                     class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">${element.title}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            `;
+            });
+            italianDish.innerHTML = content;
+            return contentData;
+        });
+};
+
+const fetchJapanese = () => {
+    let loader = `<div class="loader loader-default is-active" data-text></div>`;
+    japaneseDish.innerHTML = loader;
+    fetch(
+        `https://api.spoonacular.com/recipes/complexSearch?cuisine=japanese&number=8&apiKey=${randomAPIKey}`
+    )
+        .then((response) => response.json())
+        .then((data) => {
+            let content = "";
+            let contentData = data.results.forEach((element) => {
+                content += `<div class="card mb-3" 
+                                 onclick="detail(event, ${element.id})"
+                                 style="width: 13rem; padding: 0.5rem">
+                                <img src="${element.image}" 
+                                     onerror="this.onerror=null; this.src='assets/img/image-not-available.jpg'"  
+                                     alt="${element.title}" 
+                                     class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">${element.title}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            `;
+            });
+            japaneseDish.innerHTML = content;
+            return contentData;
+        });
+};
+
+const fetchKorean = () => {
+    let loader = `<div class="loader loader-default is-active" data-text></div>`;
+    koreanDish.innerHTML = loader;
+    fetch(
+        `https://api.spoonacular.com/recipes/complexSearch?cuisine=korean&number=8&apiKey=${randomAPIKey}`
+    )
+        .then((response) => response.json())
+        .then((data) => {
+            let content = "";
+            let contentData = data.results.forEach((element) => {
+                content += `<div class="card mb-3" 
+                                 onclick="detail(event, ${element.id})"
+                                 style="width: 13rem; padding: 0.5rem">
+                                <img src="${element.image}" 
+                                     onerror="this.onerror=null; this.src='assets/img/image-not-available.jpg'"  
+                                     alt="${element.title}" 
+                                     class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">${element.title}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            `;
+            });
+            koreanDish.innerHTML = content;
+            return contentData;
+        });
+};
 
 let url = location.href;
-
-const detail = (event, id) => {
-    event.preventDefault();
-    localStorage.setItem("dishID", id);
-    localStorage.setItem("url", url);
-    window.location.replace("/assets/pages/details/dish-details.html");
-};
 
 const detail = (event, id) => {
     event.preventDefault();
