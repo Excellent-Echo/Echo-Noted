@@ -162,7 +162,7 @@ footer p i {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(31, 38, 135, 0.37);
-  margin: 1rem;
+  margin: 0 1rem 1rem;
 }
 
 .dish-country-card:hover {
