@@ -5,12 +5,12 @@ const apiKey = [
     "d624b4c0731e4398904c190db5bb6783",
     "1c0f1e0838ad44e8aaccbd48b5375f7b",
     "337cb9cb85fa416bbdf29e69ef8d39d9"
-],
-    random = Math.floor(Math.random() * apiKey.length),
+];
+
+const random = Math.floor(Math.random() * apiKey.length),
     randomAPIKey = apiKey[random],
     endPoint = `https://api.spoonacular.com/recipes/random?number=4&apiKey=${randomAPIKey}`,
     recommendation = document.getElementById("dish-item"),
-
     fetchAPI = _ => {
     fetch(endPoint).then(response => response.json()).then(data => {
         let content = "",

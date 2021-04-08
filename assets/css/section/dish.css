@@ -48,6 +48,7 @@
     border: none;
     padding: 1rem 5rem;
     border-radius: 100rem;
+    margin-top: 1rem;
 }
 
 #dish button:hover {
@@ -55,8 +56,20 @@
 }
 
 /* ======================================== MEDIA QUERY ======================================== */
+/* -------------------- xx-small -------------------- */
+@media screen and (max-width: 500px) {
+    #dish-item {
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+}
+/* -------------------- xx-small -------------------- */
+
 /* -------------------- x-small -------------------- */
-@media screen and (max-width: 575px) {}
+@media screen and (min-width: 501px) and (max-width: 575px) {
+    #dish-item {
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+}
 /* -------------------- x-small -------------------- */
 
 /* -------------------- small -------------------- */
