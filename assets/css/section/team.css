@@ -38,10 +38,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid #d9d9d9;
+}
+
+#team-item .team-card:hover {
+    border-color: #ffb341; !important;
 }
 
 #team-item .team-card:hover .nav_link {
     transform: translateY(7rem);
+    border-color: #ffb341;
 }
 
 #team-item .team-card img {
