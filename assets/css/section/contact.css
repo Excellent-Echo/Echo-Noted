@@ -19,6 +19,16 @@
     background-color: #595959;
 }
 
+#contact form div .btn-warning {
+    background-color: rgba(255, 179, 65, .8);
+    font-weight: bolder;
+    border-radius: 100rem;
+}
+
+#contact form div .btn-warning:hover {
+    background-color: #ffb341;
+}
+
 /* ======================================== MEDIA QUERY ======================================== */
 /* -------------------- x-small -------------------- */
 @media screen and (max-width: 575px) {}
