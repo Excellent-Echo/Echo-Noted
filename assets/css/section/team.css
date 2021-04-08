@@ -41,7 +41,7 @@
 }
 
 #team-item .team-card:hover .nav_link {
-    transform: translateX(-1.5rem);
+    transform: translateY(7rem);
 }
 
 #team-item .team-card img {
@@ -55,18 +55,24 @@
     margin-bottom: 1.5rem;
 }
 
+
 #team-item .socmed {
     position: absolute;
-    top: 50%;
-    left: 13%;
-    transform: translateY(-50%);
+}
+
+#team-item .socmed i {
+    font-size: 1.5rem;
+}
+
+#team-item .socmed i:hover {
+    color: #ffb341;
 }
 
 #team-item .socmed .nav_link {
-    display: block;
+    display: inline-block;
     font-size: 1.35rem;
     margin: 1rem 0;
-    transform: translateX(-10rem);
+    transform: translateY(30rem);
 }
 
 #team-item .socmed .nav_link:nth-child(1) {
@@ -98,12 +104,24 @@
 }
 
 /* ======================================== MEDIA QUERY ======================================== */
+/* -------------------- xx-small -------------------- */
+@media screen and (max-width: 500px) {
+
+}
+/* -------------------- xx-small -------------------- */
+
 /* -------------------- x-small -------------------- */
-@media screen and (max-width: 575px) {}
+@media screen and (min-width: 501px) and (max-width: 575px) {
+
+}
 /* -------------------- x-small -------------------- */
 
 /* -------------------- small -------------------- */
-@media screen and (min-width: 576px) and (max-width: 767px) {}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    #team-item {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
+}
 /* -------------------- small -------------------- */
 
 /* -------------------- medium -------------------- */

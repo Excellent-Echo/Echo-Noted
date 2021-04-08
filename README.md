@@ -1,4 +1,4 @@
-# EXCHO RESTAURANT
+# EXCHOURANT
 | Name                  | Github   |
 |-----------------------|----------|
 | Pandu Wilanthara      | [panduwil](https://github.com/panduwil) |
@@ -17,5 +17,5 @@
 - User bisa melihat wishlist dan search berdasarkan nama/nomor handphone
 
 ## URL
-[Excho Restaurant](https://echo-noted.netlify.app/)
+[Exchourant](https://echo-noted.netlify.app/)
 

@@ -1,7 +1,7 @@
 header {
-    border-bottom: 1px solid #d9d9d9;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 header .navbar {
@@ -9,13 +9,14 @@ header .navbar {
     background-color: #fff;
 }
 
+
+header .nav-link i {
+    font-size: 1.5rem;
+}
+
 /* ======================================== MEDIA QUERY ======================================== */
 /* -------------------- x-small -------------------- */
-@media screen and (max-width: 575px) {
-    header .navbar-brand span {
-        display: none;
-    }
-}
+@media screen and (max-width: 575px) {}
 /* -------------------- x-small -------------------- */
 
 /* -------------------- small -------------------- */
