@@ -22,179 +22,190 @@ const fetchApi = (id) => {
     fetch(endPoint)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
+            const checkDairy = () => {
+                if (!data.dairyFree) {
+                    return ``;
+                } else {
+                    return `<div class="col information-content my-2 d-flex flex-column align-items-center">
+						<img src="/assets/img/icons/dairy-free.png" alt="dairy-free">
+						<h6>dairy free</h6>
+					</div>`;
+                }
+            };
+
+            const checkGluten = () => {
+                if (!data.glutenFree) {
+                    return ``;
+                } else {
+                    return `<div class="col information-content my-2 d-flex flex-column align-items-center">
+						<img src="/assets/img/icons/gluten-free.png" alt="dairy-free">
+						<h6>gluten free</h6>
+					</div>`;
+                }
+            };
+
+            const checkVegetarian = () => {
+                if (!data.vegetarian) {
+                    return ``;
+                } else {
+                    return `<div class="col information-content my-2 d-flex flex-column align-items-center">
+						<img src="/assets/img/icons/vegetarian.png" alt="dairy-free">
+						<h6>vegetarian</h6>
+					</div>`;
+                }
+            };
+
+            const checkVegan = () => {
+                if (!data.vegan) {
+                    return ``;
+                } else {
+                    return `<div class="col information-content my-2 d-flex flex-column align-items-center">
+						<img src="/assets/img/icons/vegan.png" alt="dairy-free">
+						<h6>vegan</h6>
+					</div>`;
+                }
+            };
+
+            const checkHealthy = () => {
+                if (!data.veryHealthy) {
+                    return ``;
+                } else {
+                    return `<div class="col information-content my-2 d-flex flex-column align-items-center">
+						<img src="/assets/img/icons/healthy.png" alt="dairy-free">
+						<h6>healthy</h6>
+					</div>`;
+                }
+            };
+
             let content = `
 			<div>
-
-			<div class="row">
-				<div class="col-md-5">
-					<div class="row">
-						<h3 class="summary">${data.title}</h3>
-					</div>
-
-					<div class="row">
-						<div class="box-image">
-							<img src="${data.image}" width="100%" alt="gambar makanan" />
-						</div>
-					</div>
-
-				</div>
-
-				<div class="col-md-7">
-					<div class="row information mt-5">
-						<div class="col information-content my-2">
-							<i class='bx bx-dollar-circle bx-md'></i>
-							<h6>$ ${data.pricePerServing} per serving</h6>
-						</div>
-
-						<div class="col information-content my-2">
-							<i class='bx bx-timer bx-md'></i>
-							<h6>Ready in ${data.readyInMinutes} minutes</h6>
-						</div>
-					</div>
-
-					<div class="row my-2 data-summary p-2">
-						<p class="summary">		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate possimus atque veritatis repudiandae doloribus consequatur, velit, quasi, illo omnis incidunt debitis quam mollitia excepturi accusamus nam fuga quis alias eaque.</p>
-						</p>
-					</div>
-
-					<div class="row">
-						<!--<div class ="submitBtn">
-							<input class="btn btn-primary" type="submit" value="Wishlist" onclick="getByID(event, ${data.id})">                                   
-						</div>-->
-
-						<!-- Button trigger modal -->
-						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-						Wishlist
-						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog modal-fullscreen">
-							<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Wishlist</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="row">
+					<div class="col-md-4 p-0">
+						<div class="row">
+							<div class="box-image">
+								<img src="${data.image}" width="100%" alt="gambar makanan" />
 							</div>
-							<div class="modal-body">
-								<div class="row">
-									<div class="col-md-4">
-										<form>
-											<div class="mb-3">
-												<label for="nama" class="form-label">Nama</label>
-												<input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
+						</div>
+					</div>
+
+					<div class="col d-flex flex-column justify-content-around align-items-center p-0">
+						<a href="https://www.instagram.com" target="_blank">
+						<i class="fab fa-2x fa-instagram"></i></a>
+
+						<a href="https://www.facebook.com" target="_blank">
+						<i class="fab fa-2x fa-facebook"></i></a>
+
+						<a href="https://www.twitter.com" target="_blank">
+						<i class="fab fa-2x fa-twitter"></i></a>
+					</div>
+
+					<div class="col-md-7 d-flex flex-column justify-content-between">
+						<div class="row information">
+							<div class="col information-content my-2 d-flex flex-column align-items-center">
+								<i class='bx bx-dollar-circle bx-md'></i>
+								<h6>$ ${(data.pricePerServing / 100).toFixed(2)} per serving</h6>
+							</div>
+
+							<div class="col information-content my-2 d-flex flex-column align-items-center">
+								<i class='bx bx-timer bx-md'></i>
+								<h6>ready in ${data.readyInMinutes} minutes</h6>
+							</div>
+						</div>
+
+						<div class="row information">
+							${checkDairy()}
+							${checkGluten()}
+							${checkVegetarian()}
+							${checkVegan()}
+							${checkHealthy()}
+						</div>
+
+						<div class="row">
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getByID(event, ${
+                                data.id
+                            })">
+							Add to Wishlist
+							</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-4">
+														<form onsubmit="formHandle(e)">
+															<div class="mb-3">
+																<label for="nama" class="form-label">Name</label>
+																<input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+															</div>
+															<div class="mb-3">
+																<label for="email" class="form-label">Email address</label>
+																<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+															</div>
+															<div class="mb-3">
+																<label for="phone" class="form-label">Phone number</label>
+																<input type="text" class="form-control" id="inputPhone" aria-describedby="phoneHelp">
+															</div>
+															<button type="submit" class="btn btn-primary">Submit</button>
+														</form>
+													</div>
+									
+													<div class="col-md-8">
+														<table class="table">
+															<thead>
+																<tr>
+																<th scope="col">No</th>
+																<th scope="col" width="40%">Image</th>
+																<th scope="col">Dish</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																<th scope="row">1</th>
+																<td width="40%"><img src="${data.image}" alt="img" style="width: 100%" /></td>
+																<td>${data.title}</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
 											</div>
-											<div class="mb-3">
-												<label for="email" class="form-label">Email address</label>
-												<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-											</div>
-											<div class="mb-3">
-												<label for="phone" class="form-label">Phone number</label>
-												<input type="text" class="form-control" id="phone" aria-describedby="emailHelp">
-											</div>
-											<button type="submit" class="btn btn-primary">Submit</button>
-										</form>
-									</div>
-									<div class="col-md-8">
-										<table class="table">
-											<thead>
-												<tr>
-												<th scope="col">#</th>
-												<th scope="col">Image</th>
-												<th scope="col">Dish</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												<th scope="row">1</th>
-												<td><img src="" alt="img" /></td>
-												<td>lorem ipsum dolor sit amet</td>
-												</tr>
-											</tbody>
-										</table>
+										</div>
 									</div>
 								</div>
 							</div>
-							</div>
 						</div>
-						</div>
-					</div>	
-
-					<div class="row">
-						<div class="social-media">
-							<a href="https://www.instagram.com" target="_blank">
-							<i class="fab fa-2x fa-instagram"></i></a>
-
-							<a href="https://www.facebook.com" target="_blank">
-							<i class="fab fa-2x fa-facebook"></i></a>
-
-							<a href="https://www.twitter.com" target="_blank">
-							<i class="fab fa-2x fa-twitter-square"></i></a>
-						</div>
-					</div>	
+					</div>
 				</div>
-			</div>
-
-			<div class="row tips mt-5">
-				<div class="col-md-6 health-tips">
-					<h4>Health Tips</h4>
-					<ul>
-						<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic enim suscipit optio vel officia reprehenderit, obcaecati dolorem sed modi cupiditate recusandae aliquid ab rem asperiores eveniet laboriosam, rerum autem.</li>
-						<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic enim suscipit optio vel officia reprehenderit, obcaecati dolorem sed modi cupiditate recusandae aliquid ab rem asperiores eveniet laboriosam, rerum autem.</li>
-						<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic enim suscipit optio vel officia reprehenderit, obcaecati dolorem sed modi cupiditate recusandae aliquid ab rem asperiores eveniet laboriosam, rerum autem.</li>
-					</ul>
-				</div>
-
-				<div class="col-md-6 cooking-tips">
-					<h4>Cooking Tips</h4>
-					<ul>
-						<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic enim suscipit optio vel officia reprehenderit, obcaecati dolorem sed modi cupiditate recusandae aliquid ab rem asperiores eveniet laboriosam, rerum autem.</li>
-						<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic enim suscipit optio vel officia reprehenderit, obcaecati dolorem sed modi cupiditate recusandae aliquid ab rem asperiores eveniet laboriosam, rerum autem.</li>
-						<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic enim suscipit optio vel officia reprehenderit, obcaecati dolorem sed modi cupiditate recusandae aliquid ab rem asperiores eveniet laboriosam, rerum autem.</li>
-					</ul>
-				</div>
-			</div>
-
 			</div>
 		`;
             dishBreadcumb.innerHTML = data.title;
             detailSection.innerHTML = content;
+            cuisines = data.cuisines;
 
             let menuLink = document.createElement("a");
             let linkText = "";
 
-            if (
-                url ==
-                "http://127.0.0.1:5500/assets/category/korean/korean.html"
-            ) {
+            if (cuisines.includes("Korean")) {
                 linkText = document.createTextNode("Korean Dish");
                 menuLink.appendChild(linkText);
-            } else if (
-                url ==
-                "http://127.0.0.1:5500/assets/category/chinese/chinese.html"
-            ) {
+            } else if (cuisines.includes("Chinese")) {
                 linkText = document.createTextNode("Chinese Dish");
                 menuLink.appendChild(linkText);
-            } else if (
-                url ==
-                "http://127.0.0.1:5500/assets/category/indian/indian.html"
-            ) {
+            } else if (cuisines.includes("Indian")) {
                 linkText = document.createTextNode("Indian Dish");
                 menuLink.appendChild(linkText);
-            } else if (
-                url ==
-                "http://127.0.0.1:5500/assets/category/italian/italian.html"
-            ) {
+            } else if (cuisines.includes("Italian")) {
                 linkText = document.createTextNode("Italian Dish");
                 menuLink.appendChild(linkText);
-            } else if (
-                url ==
-                "http://127.0.0.1:5500/assets/category/japanese/japanese.html"
-            ) {
+            } else if (cuisines.includes("Japanese")) {
                 linkText = document.createTextNode("Japanese Dish");
                 menuLink.appendChild(linkText);
             } else {
-                linkText = document.createTextNode("Middle Eastern Dish");
+                linkText = document.createTextNode("Dish");
                 menuLink.appendChild(linkText);
             }
 
@@ -218,12 +229,42 @@ const getByID = (event, id) => {
                 image: data.image,
             };
 
-            localStorage.setItem("", JSON.stringify(wishlistData));
-
-            Swal.fire(
-                "Good job!",
-                "Menambahkan makanan ke dalam cart!",
-                "success"
-            );
+            localStorage.setItem("wishlistData", JSON.stringify(wishlistData));
         });
+};
+
+const formHandle = (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("inputName").value;
+    const email = document.getElementById("inputEmail").value;
+    const phone = document.getElementById("inputPhone").value;
+    const dish = JSON.parse(localStorage.getItem("wishlistData"));
+
+    const data = {
+        name: name,
+        email: email,
+        phone: phone,
+        dish: dish,
+    };
+
+    fetch("https://605f03ffe96e5c00174080e1.mockapi.io/api/v1/wishlist", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Success:", data);
+            alert("sukses");
+            // Swal.fire("Good job!", "Berhasil menambahkan wishlist!", "success");
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            alert("error");
+        });
+
+    // e.target.reset();
 };

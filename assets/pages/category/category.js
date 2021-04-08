@@ -167,7 +167,7 @@ const fetchKorean = () => {
 
 let url = location.href;
 
-const detail = (event, id) => {
+const detail = (event, id, title) => {
     event.preventDefault();
     localStorage.setItem("dishID", id);
     localStorage.setItem("url", url);
