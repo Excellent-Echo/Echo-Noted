@@ -17,3 +17,10 @@
 * a {
     text-decoration: none;
 }
+
+/* modal-detail */
+@media screen and (min-width: 676px) {
+    .modal-dialog {
+      max-width: 800px;
+    }
+  }
