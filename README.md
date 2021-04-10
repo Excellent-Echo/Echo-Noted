@@ -1,4 +1,4 @@
-# EXCHOURANT
+# EXCHOURANT | FIND A DISH ONE SUIT ONE'S TASTE
 | Name                  | Github   |
 |-----------------------|----------|
 | Pandu Wilanthara      | [panduwil](https://github.com/panduwil) |
