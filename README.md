@@ -1,4 +1,4 @@
-# EXCHOURANT | FIND A DISH ONE SUIT ONE'S TASTE
+# EXCHOURANT - FIND A DISH ONE SUIT ONE'S TASTE
 | Name                  | Github   |
 |-----------------------|----------|
 | Pandu Wilanthara      | [panduwil](https://github.com/panduwil) |
@@ -17,5 +17,5 @@
 - User bisa melihat wishlist dan search berdasarkan nama/nomor handphone
 
 ## URL
-[Exchourant](https://echo-noted.netlify.app/)
+[Exchourant - Find A Dish Suit One's Taste](https://echo-noted.netlify.app/)
 
