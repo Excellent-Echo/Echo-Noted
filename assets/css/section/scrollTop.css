@@ -1,5 +1,5 @@
-#scrollTop .btn-warning {
-    border-radius: 1rem;
+#scrollTop button {
+    border-radius: 100rem;
     position: fixed;
     right: 1rem;
     bottom: .8rem;
@@ -7,14 +7,15 @@
     justify-content: center;
     align-items: center;
     padding: .5rem;
+    border: none;
     z-index: 1;
-    background-color: rgba(255, 179, 65, .8);
+    background-color: var(--bs-yellow);
     /*transition: .4s;*/
     /*visibility: hidden;*/
 }
 
-#scrollTop .btn-warning:hover {
-    background-color: #ffb341;
+#scrollTop button:hover {
+    background-color: var(--bs-orange);
 }
 
 #scrollTop i {

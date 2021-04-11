@@ -71,7 +71,7 @@
 }
 
 #team-item .socmed i:hover {
-    color: #ffb341;
+    color: var(--bs-orange);
 }
 
 #team-item .socmed .nav_link {
