@@ -18,16 +18,17 @@
 }
 
 .hero-left-top button {
-    background-color: rgba(255, 179, 65, .9);
+    padding: 1rem 3rem;
+    font-size: 1rem;
     border: none;
+    background-color: var(--bs-yellow);
     font-weight: bolder;
-    padding: 1rem 5rem;
     border-radius: 100rem;
     margin: 1rem 0 3rem ;
 }
 
 .hero-left-top button:hover {
-    background-color: #ffb341;
+    background-color: var(--bs-orange);
 }
 
 .hero-left-bottom {
@@ -48,7 +49,7 @@
 }
 
 .hero-left-bottom .info h5 span {
-    color: #ffb341;
+    color: var(--bs-orange);
 }
 
 .hero-right .carousel-inner {
@@ -56,7 +57,7 @@
 }
 
 .hero-right .carousel-indicators button {
-    background-color: #ffb341;
+    background-color: var(--bs-orange);
 }
 
 .hero-right .carousel-img1,

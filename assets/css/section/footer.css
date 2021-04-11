@@ -24,12 +24,12 @@ footer .footer-top-1 p,
 footer .footer-top-2 a,
 footer .footer-top-3 h6,
 footer .footer-bottom a {
-    color: #ffb341;
+    color: var(--bs-orange);
 }
 
 footer .footer-top-2 a:hover,
 footer .footer-bottom a:hover {
-    color: #ffb341;
+    color: var(--bs-orange);
     text-decoration: underline;
 }
 
@@ -39,7 +39,7 @@ footer .footer-top-4 i {
 }
 
 footer .footer-top-4 i:hover {
-    color: #ffb341;
+    color: var(--bs-orange);
 }
 
 footer .footer-bottom p i {

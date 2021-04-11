@@ -19,14 +19,17 @@
     background-color: #595959;
 }
 
-#contact form div .btn-warning {
-    background-color: rgba(255, 179, 65, .8);
+#contact div button {
+    font-size: 1rem;
+    border: none;
+    background-color: var(--bs-yellow);
     font-weight: bolder;
+    padding: 1rem 3rem;
     border-radius: 100rem;
 }
 
-#contact form div .btn-warning:hover {
-    background-color: #ffb341;
+#contact div button:hover {
+    background-color: var(--bs-orange);
 }
 
 /* ======================================== MEDIA QUERY ======================================== */
