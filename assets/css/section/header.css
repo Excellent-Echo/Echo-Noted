@@ -9,6 +9,14 @@ header .navbar {
     background-color: #fff;
 }
 
+header .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar-brand img {
+    width: 2rem;
+}
 
 header .nav-link i {
     font-size: 1.5rem;
