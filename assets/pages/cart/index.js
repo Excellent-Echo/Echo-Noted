@@ -1,9 +1,10 @@
-let storage = JSON.parse(localStorage.getItem('wishlist'))
+let storage = JSON.parse(localStorage.getItem("wishlist"));
 
 const saveWishlist = () => {
-	// storage.forEach(function(data) {
-		document.getElementById("dish-table").innerHTML = 
-		`<table class="table table-hover">
+    // storage.forEach(function(data) {
+    document.getElementById(
+        "dish-table"
+    ).innerHTML = `<table class="table table-hover">
 			<thead>
 			  <tr>
 				<th scope="col">No</th>
@@ -18,49 +19,45 @@ const saveWishlist = () => {
 				<td>${storage.title}</td>
 			  </tr>
 			</tbody>
-		</table>`
-	// })
-}
-saveWishlist()
+		</table>`;
+    // })
+};
+saveWishlist();
 
 const formHandle = (e) => {
-	e.preventDefault();
+    e.preventDefault();
 
-	const name = document.getElementById("exampleInputName1").value;
-	const email = document.getElementById("exampleInputEmail1").value;
-	const phone = document.getElementById("exampleInputPhone1").value;
-	const dish = storage
+    const name = document.getElementById("exampleInputName1").value;
+    const email = document.getElementById("exampleInputEmail1").value;
+    const phone = document.getElementById("exampleInputPhone1").value;
+    const dish = storage;
 
-	const data = {
-		name: name,
-		email: email,
-		phone: phone,
-		dish: dish
-	 };
+    const data = {
+        name: name,
+        email: email,
+        phone: phone,
+        dish: dish,
+    };
 
-	fetch('https://605f03ffe96e5c00174080e1.mockapi.io/api/v1/wishlist', {
-	method: 'POST',
-	headers: {
-		'Content-Type': 'application/json',
-	},
-	body: JSON.stringify(data),
-	})
-	.then(response => response.json())
-	.then(data => {
-	console.log('Success:', data);
+    fetch("https://605f03ffe96e5c00174080e1.mockapi.io/api/v1/wishlist", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Success:", data);
 
-	Swal.fire(
-		'Good job!',
-		'Berhasil menambahkan wishlist!',
-		'success'
-	  )
-	})
-	.catch((error) => {
-	console.error('Error:', error);
-	});
+            Swal.fire("Good job!", "Berhasil menambahkan wishlist!", "success");
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
 
-	e.target.reset();
-  };
+    e.target.reset();
+};
 
-  const form1 = document.getElementById("form1");
-  form1.addEventListener("submit", formHandle);
+const form1 = document.getElementById("form1");
+form1.addEventListener("submit", formHandle);
