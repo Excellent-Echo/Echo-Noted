@@ -17,5 +17,5 @@
 - User bisa melihat wishlist dan search berdasarkan nama/nomor handphone
 
 ## URL
-[EXCHORANT](https://echo-noted.netlify.app/)
+[Exchorant - Find A Dish, Suit One's Taste](https://echo-noted.netlify.app/)
 
